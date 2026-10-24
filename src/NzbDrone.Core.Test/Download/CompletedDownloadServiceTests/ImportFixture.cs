@@ -139,6 +139,8 @@ namespace NzbDrone.Core.Test.Download.CompletedDownloadServiceTests
                 .Verify(v => v.PublishEvent<DownloadCompletedEvent>(It.IsAny<DownloadCompletedEvent>()), Times.Never());
 
             AssertNotImported();
+
+            ExceptionVerification.ExpectedWarns(1);
         }
 
         [Test]
@@ -164,6 +166,8 @@ namespace NzbDrone.Core.Test.Download.CompletedDownloadServiceTests
             Subject.Import(_trackedDownload);
 
             AssertNotImported();
+
+            ExceptionVerification.ExpectedWarns(1);
         }
 
         [Test]
@@ -180,6 +184,8 @@ namespace NzbDrone.Core.Test.Download.CompletedDownloadServiceTests
             Subject.Import(_trackedDownload);
 
             AssertNotImported();
+
+            ExceptionVerification.ExpectedWarns(1);
         }
 
         [Test]
@@ -208,6 +214,8 @@ namespace NzbDrone.Core.Test.Download.CompletedDownloadServiceTests
             Subject.Import(_trackedDownload);
 
             AssertNotImported();
+
+            ExceptionVerification.ExpectedWarns(1);
         }
 
         [Test]
@@ -243,6 +251,8 @@ namespace NzbDrone.Core.Test.Download.CompletedDownloadServiceTests
             Subject.Import(_trackedDownload);
 
             AssertNotImported();
+
+            ExceptionVerification.ExpectedWarns(1);
         }
 
         [Test]
@@ -448,6 +458,8 @@ namespace NzbDrone.Core.Test.Download.CompletedDownloadServiceTests
 
             Mocker.GetMock<IEventAggregator>()
                   .Verify(v => v.PublishEvent(It.IsAny<ManualInteractionRequiredEvent>()), Times.Once());
+
+            ExceptionVerification.ExpectedWarns(1);
         }
 
         [Test]
