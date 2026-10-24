@@ -187,17 +187,6 @@ namespace NzbDrone.Core.Download
                 return Enumerable.Empty<IDownloadClient>();
             }
 
-            var matchingTagsClients = availableProviders.Where(i => i.Definition.Tags.Intersect(tags).Any()).ToList();
-
-            availableProviders = matchingTagsClients.Count > 0 ?
-                matchingTagsClients :
-                availableProviders.Where(i => i.Definition.Tags.Empty()).ToList();
-
-            if (availableProviders.Empty())
-            {
-                throw new DownloadClientUnavailableException("No download client was found without tags or a matching series tag. Please check your settings.");
-            }
-
             if (indexerId > 0)
             {
                 var indexer = _indexerFactory.Find(indexerId);
@@ -211,6 +200,11 @@ namespace NzbDrone.Core.Download
                         throw new DownloadClientUnavailableException($"Indexer specified download client does not exist for {indexer.Name}");
                     }
 
+                    if (client.Definition.Tags.Any() && !client.Definition.Tags.Intersect(tags).Any())
+                    {
+                        throw new DownloadClientUnavailableException($"Indexer specified download client '{client.Definition.Name}' for {indexer.Name} has tags that do not match the series");
+                    }
+
                     if (filterBlockedClients && blockedProviders.Contains(client.Definition.Id))
                     {
                         throw new DownloadClientUnavailableException($"Indexer specified download client is not available due to recent failures for {indexer.Name}");
@@ -218,6 +212,17 @@ namespace NzbDrone.Core.Download
 
                     return [client];
                 }
+            }
+
+            var matchingTagsClients = availableProviders.Where(i => i.Definition.Tags.Intersect(tags).Any()).ToList();
+
+            availableProviders = matchingTagsClients.Count > 0 ?
+                matchingTagsClients :
+                availableProviders.Where(i => i.Definition.Tags.Empty()).ToList();
+
+            if (availableProviders.Empty())
+            {
+                throw new DownloadClientUnavailableException("No download client was found without tags or a matching series tag. Please check your settings.");
             }
 
             if (blockedProviders.Any())

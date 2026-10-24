@@ -292,5 +292,45 @@ namespace NzbDrone.Core.Test.Download
             clientIds[0].Should().Be(2);
             clientIds[1].Should().Be(1);
         }
+
+        [Test]
+        public void should_return_untagged_indexer_client_when_other_clients_match_series_tags()
+        {
+            var seriesTags = new HashSet<int> { 1 };
+
+            WithTorrentClient(tags: new HashSet<int> { 1 });
+            WithTorrentClient();
+            WithTorrentIndexer(2);
+
+            var clients = Subject.GetDownloadClients(DownloadProtocol.Torrent, indexerId: 1, tags: seriesTags).ToList();
+
+            clients.Should().ContainSingle();
+            clients.First().Definition.Id.Should().Be(2);
+        }
+
+        [Test]
+        public void should_return_tagged_indexer_client_when_series_tag_matches()
+        {
+            var seriesTags = new HashSet<int> { 1 };
+
+            WithTorrentClient();
+            WithTorrentClient(tags: new HashSet<int> { 1 });
+            WithTorrentIndexer(2);
+
+            var clients = Subject.GetDownloadClients(DownloadProtocol.Torrent, indexerId: 1, tags: seriesTags).ToList();
+
+            clients.Should().ContainSingle();
+            clients.First().Definition.Id.Should().Be(2);
+        }
+
+        [Test]
+        public void should_throw_when_indexer_client_tags_do_not_match_series()
+        {
+            WithTorrentClient();
+            WithTorrentClient(tags: new HashSet<int> { 2 });
+            WithTorrentIndexer(2);
+
+            Assert.Throws<DownloadClientUnavailableException>(() => Subject.GetDownloadClients(DownloadProtocol.Torrent, indexerId: 1, tags: new HashSet<int> { 1 }));
+        }
     }
 }
