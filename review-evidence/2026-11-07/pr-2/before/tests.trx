@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="ae8526dc-31d3-4630-9b77-556815b49f28" name="@TEST-HOST 2026-11-07 15:16:44" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-07T15:16:44.9103060-08:00" queuing="2026-11-07T15:16:44.9103060-08:00" start="2026-11-07T15:16:43.8602530-08:00" finish="2026-11-07T15:16:44.9300870-08:00" />
+  <TestSettings name="default" id="22ef5022-1a08-4c32-a70e-e41b5cfe1c73">
+    <Deployment runDeploymentRoot="_TEST-HOST_2026-11-07_15_16_44" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="39871314-af8e-4e81-8d87-2bc2b6f08d6f" testId="8a253c59-6ef6-e9e2-6d21-9094815c89ca" testName="should_return_indexer_specific_client_when_specified" computerName="TEST-HOST" duration="00:00:00.0084770" startTime="2026-11-07T15:16:44.8765410-08:00" endTime="2026-11-07T15:16:44.8850180-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="39871314-af8e-4e81-8d87-2bc2b6f08d6f">
+      <Output>
+        <StdOut>15:16:44.8 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_indexer_specific_client_when_specified --- 
+15:16:44.8 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_indexer_specific_client_when_specified ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="43b15cce-3a67-4dde-9646-b2da615d5476" testId="5372566b-700f-1dc2-4ef7-568c456b122d" testName="should_throw_when_all_clients_blocked_and_filter_enabled" computerName="TEST-HOST" duration="00:00:00.0020480" startTime="2026-11-07T15:16:44.8937760-08:00" endTime="2026-11-07T15:16:44.8958250-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="43b15cce-3a67-4dde-9646-b2da615d5476">
+      <Output>
+        <StdOut>15:16:44.8 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_throw_when_all_clients_blocked_and_filter_enabled --- 
+15:16:44.8 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_throw_when_all_clients_blocked_and_filter_enabled ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="83dab56d-7683-46f2-8e56-f6ccedcb8b2d" testId="013d7f26-67b1-fef1-f4be-4f20bd341c4f" testName="should_return_all_available_clients_for_protocol" computerName="TEST-HOST" duration="00:00:00.0009070" startTime="2026-11-07T15:16:44.8730820-08:00" endTime="2026-11-07T15:16:44.8739890-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="83dab56d-7683-46f2-8e56-f6ccedcb8b2d">
+      <Output>
+        <StdOut>15:16:44.8 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_all_available_clients_for_protocol --- 
+15:16:44.8 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_all_available_clients_for_protocol ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0eb2c8e5-b999-4f53-b391-6c17526c36bf" testId="c24e3817-f204-7fed-e877-18ff215b34c0" testName="should_return_clients_ordered_by_priority_then_by_last_used" computerName="TEST-HOST" duration="00:00:00.0005820" startTime="2026-11-07T15:16:44.8748960-08:00" endTime="2026-11-07T15:16:44.8754770-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0eb2c8e5-b999-4f53-b391-6c17526c36bf">
+      <Output>
+        <StdOut>15:16:44.8 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_clients_ordered_by_priority_then_by_last_used --- 
+15:16:44.8 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_clients_ordered_by_priority_then_by_last_used ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="45ead035-671b-4846-a1d1-1da1b10cb96e" testId="022334ab-6eb1-9e9f-17f0-7494b748605d" testName="should_throw_when_all_clients_have_non_matching_tags" computerName="TEST-HOST" duration="00:00:00.0004710" startTime="2026-11-07T15:16:44.8958500-08:00" endTime="2026-11-07T15:16:44.8963210-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="45ead035-671b-4846-a1d1-1da1b10cb96e">
+      <Output>
+        <StdOut>15:16:44.8 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_throw_when_all_clients_have_non_matching_tags --- 
+15:16:44.8 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_throw_when_all_clients_have_non_matching_tags ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5dd1e256-0669-4bbc-84ba-7a490a2c8b5a" testId="4798b080-acc0-ca04-f40e-f49a6fdc79e4" testName="should_throw_when_indexer_client_does_not_exist" computerName="TEST-HOST" duration="00:00:00.0008160" startTime="2026-11-07T15:16:44.8963400-08:00" endTime="2026-11-07T15:16:44.8971560-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5dd1e256-0669-4bbc-84ba-7a490a2c8b5a">
+      <Output>
+        <StdOut>15:16:44.8 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_throw_when_indexer_client_does_not_exist --- 
+15:16:44.8 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_throw_when_indexer_client_does_not_exist ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="10985443-d5b1-42fa-a223-c8104ed61bfd" testId="95784a1f-1943-a343-e439-402412c423ef" testName="should_return_non_tagged_clients_when_no_matching_tags" computerName="TEST-HOST" duration="00:00:00.0007680" startTime="2026-11-07T15:16:44.8850360-08:00" endTime="2026-11-07T15:16:44.8858040-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="10985443-d5b1-42fa-a223-c8104ed61bfd">
+      <Output>
+        <StdOut>15:16:44.8 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_non_tagged_clients_when_no_matching_tags --- 
+15:16:44.8 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_non_tagged_clients_when_no_matching_tags ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f74ef4f6-dee5-406a-8fd7-0362c87a1e06" testId="bc2c6efb-02f1-586e-84af-d93d50c29bce" testName="should_return_empty_when_no_clients_available_for_protocol" computerName="TEST-HOST" duration="00:00:00.0010300" startTime="2026-11-07T15:16:44.8754950-08:00" endTime="2026-11-07T15:16:44.8765250-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f74ef4f6-dee5-406a-8fd7-0362c87a1e06">
+      <Output>
+        <StdOut>15:16:44.8 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_empty_when_no_clients_available_for_protocol --- 
+15:16:44.8 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_empty_when_no_clients_available_for_protocol ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="174606c8-c718-4abc-a354-e8f1091e75f7" testId="1ba26c69-8721-2598-6b20-9f2a36635a59" testName="should_return_blocked_clients_when_filter_disabled" computerName="TEST-HOST" duration="00:00:00.0008710" startTime="2026-11-07T15:16:44.8740080-08:00" endTime="2026-11-07T15:16:44.8748790-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="174606c8-c718-4abc-a354-e8f1091e75f7">
+      <Output>
+        <StdOut>15:16:44.8 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_blocked_clients_when_filter_disabled --- 
+15:16:44.8 Trace: No non-blocked Download Client available for Torrent, returning all clients. 
+15:16:44.8 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_blocked_clients_when_filter_disabled ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b0392d03-b730-4117-9683-0e9d86dde38d" testId="f8f4d4cf-6b3a-f272-e915-97259de509f7" testName="should_rotate_clients_within_same_priority_based_on_last_used" computerName="TEST-HOST" duration="00:00:00.0013470" startTime="2026-11-07T15:16:44.8924240-08:00" endTime="2026-11-07T15:16:44.8937710-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b0392d03-b730-4117-9683-0e9d86dde38d">
+      <Output>
+        <StdOut>15:16:44.8 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_rotate_clients_within_same_priority_based_on_last_used --- 
+15:16:44.8 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_rotate_clients_within_same_priority_based_on_last_used ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9a40d400-a8b4-4f9f-b9c2-3fb91a97fbba" testId="dcf26334-97e8-a9f2-d351-cae5cc6f0f98" testName="should_filter_blocked_clients_when_requested" computerName="TEST-HOST" duration="00:00:00.0181690" startTime="2026-11-07T15:16:44.8537800-08:00" endTime="2026-11-07T15:16:44.8719490-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9a40d400-a8b4-4f9f-b9c2-3fb91a97fbba">
+      <Output>
+        <StdOut>15:16:44.8 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_filter_blocked_clients_when_requested --- 
+15:16:44.8 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_filter_blocked_clients_when_requested ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4f242cc9-19c5-4b76-bad7-f8d28d7fee78" testId="5bc6dfd0-85e9-99d1-b36b-35027fe916ec" testName="should_throw_when_indexer_client_is_blocked_and_filter_enabled" computerName="TEST-HOST" duration="00:00:00.0004380" startTime="2026-11-07T15:16:44.8971730-08:00" endTime="2026-11-07T15:16:44.8976120-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4f242cc9-19c5-4b76-bad7-f8d28d7fee78">
+      <Output>
+        <StdOut>15:16:44.8 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_throw_when_indexer_client_is_blocked_and_filter_enabled --- 
+15:16:44.8 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_throw_when_indexer_client_is_blocked_and_filter_enabled ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="17463986-c332-41bb-aac6-c835a481e785" testId="42808c46-aab8-67b9-4496-1f08d3c879cb" testName="should_return_tagged_indexer_client_when_series_tag_matches" computerName="TEST-HOST" duration="00:00:00.0008930" startTime="2026-11-07T15:16:44.8858200-08:00" endTime="2026-11-07T15:16:44.8867130-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="17463986-c332-41bb-aac6-c835a481e785">
+      <Output>
+        <StdOut>15:16:44.8 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_tagged_indexer_client_when_series_tag_matches --- 
+15:16:44.8 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_tagged_indexer_client_when_series_tag_matches ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e7e22317-8789-4217-8f1a-34868ac80fac" testId="ec36eaa4-293d-d0cd-11a2-77c40b1e62ac" testName="should_return_untagged_indexer_client_when_other_clients_match_series_tags" computerName="TEST-HOST" duration="00:00:00.0056740" startTime="2026-11-07T15:16:44.8867180-08:00" endTime="2026-11-07T15:16:44.8923920-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e7e22317-8789-4217-8f1a-34868ac80fac">
+      <Output>
+        <StdOut>15:16:44.8 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_untagged_indexer_client_when_other_clients_match_series_tags --- 
+15:16:44.8 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_untagged_indexer_client_when_other_clients_match_series_tags ---</StdOut>
+        <ErrorInfo>
+          <Message>NzbDrone.Core.Download.Clients.DownloadClientUnavailableException : Indexer specified download client does not exist for Name1</Message>
+          <StackTrace>   at NzbDrone.Core.Download.DownloadClientProvider.GetFilteredDownloadClients(DownloadProtocol downloadProtocol, Int32 indexerId, Boolean filterBlockedClients, HashSet`1 tags, Boolean forSingleClient) in ./NzbDrone.Core/Download/DownloadClientProvider.cs:line 211
+   at NzbDrone.Core.Download.DownloadClientProvider.GetDownloadClients(DownloadProtocol downloadProtocol, Int32 indexerId, Boolean filterBlockedClients, HashSet`1 tags) in ./NzbDrone.Core/Download/DownloadClientProvider.cs:line 78
+   at NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_untagged_indexer_client_when_other_clients_match_series_tags() in ./NzbDrone.Core.Test/Download/DownloadClientProvider/GetDownloadClientsFixture.cs:line 305
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at NzbDrone.Core.Download.DownloadClientProvider.GetFilteredDownloadClients(DownloadProtocol downloadProtocol, Int32 indexerId, Boolean filterBlockedClients, HashSet`1 tags, Boolean forSingleClient) in ./NzbDrone.Core/Download/DownloadClientProvider.cs:line 211
+   at NzbDrone.Core.Download.DownloadClientProvider.GetDownloadClients(DownloadProtocol downloadProtocol, Int32 indexerId, Boolean filterBlockedClients, HashSet`1 tags) in ./NzbDrone.Core/Download/DownloadClientProvider.cs:line 78
+   at NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_untagged_indexer_client_when_other_clients_match_series_tags() in ./NzbDrone.Core.Test/Download/DownloadClientProvider/GetDownloadClientsFixture.cs:line 305
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5c79ac62-64a4-4198-b766-41cdc99ce084" testId="573d1e70-578b-c163-9ebe-4b9618f0a72a" testName="should_throw_when_indexer_client_tags_do_not_match_series" computerName="TEST-HOST" duration="00:00:00.0004410" startTime="2026-11-07T15:16:44.8976360-08:00" endTime="2026-11-07T15:16:44.8980770-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5c79ac62-64a4-4198-b766-41cdc99ce084">
+      <Output>
+        <StdOut>15:16:44.8 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_throw_when_indexer_client_tags_do_not_match_series --- 
+15:16:44.8 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_throw_when_indexer_client_tags_do_not_match_series ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="de5ea63b-12b0-4fa4-898e-8b764a3579be" testId="afd8aa8c-031b-45e0-9c69-2506e20e4777" testName="should_filter_clients_by_tags" computerName="TEST-HOST" duration="00:00:00.0010780" startTime="2026-11-07T15:16:44.8719760-08:00" endTime="2026-11-07T15:16:44.8730540-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="de5ea63b-12b0-4fa4-898e-8b764a3579be">
+      <Output>
+        <StdOut>15:16:44.8 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_filter_clients_by_tags --- 
+15:16:44.8 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_filter_clients_by_tags ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="cc8ab2f8-10a8-49d9-a937-c6a0643486dd" testId="f03cd946-ac41-e5fd-97e7-87a1c242ba04" testName="should_combine_tags_and_priority_filtering" computerName="TEST-HOST" duration="00:00:00.2049770" startTime="2026-11-07T15:16:44.6483030-08:00" endTime="2026-11-07T15:16:44.8532560-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cc8ab2f8-10a8-49d9-a937-c6a0643486dd" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="should_throw_when_indexer_client_does_not_exist" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="4798b080-acc0-ca04-f40e-f49a6fdc79e4">
+      <Execution id="5dd1e256-0669-4bbc-84ba-7a490a2c8b5a" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.GetDownloadClientsFixture" name="should_throw_when_indexer_client_does_not_exist" />
+    </UnitTest>
+    <UnitTest name="should_return_empty_when_no_clients_available_for_protocol" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="bc2c6efb-02f1-586e-84af-d93d50c29bce">
+      <Execution id="f74ef4f6-dee5-406a-8fd7-0362c87a1e06" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.GetDownloadClientsFixture" name="should_return_empty_when_no_clients_available_for_protocol" />
+    </UnitTest>
+    <UnitTest name="should_return_clients_ordered_by_priority_then_by_last_used" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="c24e3817-f204-7fed-e877-18ff215b34c0">
+      <Execution id="0eb2c8e5-b999-4f53-b391-6c17526c36bf" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.GetDownloadClientsFixture" name="should_return_clients_ordered_by_priority_then_by_last_used" />
+    </UnitTest>
+    <UnitTest name="should_combine_tags_and_priority_filtering" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="f03cd946-ac41-e5fd-97e7-87a1c242ba04">
+      <Execution id="cc8ab2f8-10a8-49d9-a937-c6a0643486dd" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.GetDownloadClientsFixture" name="should_combine_tags_and_priority_filtering" />
+    </UnitTest>
+    <UnitTest name="should_return_non_tagged_clients_when_no_matching_tags" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="95784a1f-1943-a343-e439-402412c423ef">
+      <Execution id="10985443-d5b1-42fa-a223-c8104ed61bfd" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.GetDownloadClientsFixture" name="should_return_non_tagged_clients_when_no_matching_tags" />
+    </UnitTest>
+    <UnitTest name="should_rotate_clients_within_same_priority_based_on_last_used" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="f8f4d4cf-6b3a-f272-e915-97259de509f7">
+      <Execution id="b0392d03-b730-4117-9683-0e9d86dde38d" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.GetDownloadClientsFixture" name="should_rotate_clients_within_same_priority_based_on_last_used" />
+    </UnitTest>
+    <UnitTest name="should_return_tagged_indexer_client_when_series_tag_matches" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="42808c46-aab8-67b9-4496-1f08d3c879cb">
+      <Execution id="17463986-c332-41bb-aac6-c835a481e785" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.GetDownloadClientsFixture" name="should_return_tagged_indexer_client_when_series_tag_matches" />
+    </UnitTest>
+    <UnitTest name="should_filter_clients_by_tags" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="afd8aa8c-031b-45e0-9c69-2506e20e4777">
+      <Execution id="de5ea63b-12b0-4fa4-898e-8b764a3579be" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.GetDownloadClientsFixture" name="should_filter_clients_by_tags" />
+    </UnitTest>
+    <UnitTest name="should_throw_when_indexer_client_tags_do_not_match_series" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="573d1e70-578b-c163-9ebe-4b9618f0a72a">
+      <Execution id="5c79ac62-64a4-4198-b766-41cdc99ce084" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.GetDownloadClientsFixture" name="should_throw_when_indexer_client_tags_do_not_match_series" />
+    </UnitTest>
+    <UnitTest name="should_return_indexer_specific_client_when_specified" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="8a253c59-6ef6-e9e2-6d21-9094815c89ca">
+      <Execution id="39871314-af8e-4e81-8d87-2bc2b6f08d6f" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.GetDownloadClientsFixture" name="should_return_indexer_specific_client_when_specified" />
+    </UnitTest>
+    <UnitTest name="should_throw_when_all_clients_have_non_matching_tags" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="022334ab-6eb1-9e9f-17f0-7494b748605d">
+      <Execution id="45ead035-671b-4846-a1d1-1da1b10cb96e" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.GetDownloadClientsFixture" name="should_throw_when_all_clients_have_non_matching_tags" />
+    </UnitTest>
+    <UnitTest name="should_throw_when_indexer_client_is_blocked_and_filter_enabled" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="5bc6dfd0-85e9-99d1-b36b-35027fe916ec">
+      <Execution id="4f242cc9-19c5-4b76-bad7-f8d28d7fee78" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.GetDownloadClientsFixture" name="should_throw_when_indexer_client_is_blocked_and_filter_enabled" />
+    </UnitTest>
+    <UnitTest name="should_return_all_available_clients_for_protocol" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="013d7f26-67b1-fef1-f4be-4f20bd341c4f">
+      <Execution id="83dab56d-7683-46f2-8e56-f6ccedcb8b2d" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.GetDownloadClientsFixture" name="should_return_all_available_clients_for_protocol" />
+    </UnitTest>
+    <UnitTest name="should_return_blocked_clients_when_filter_disabled" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="1ba26c69-8721-2598-6b20-9f2a36635a59">
+      <Execution id="174606c8-c718-4abc-a354-e8f1091e75f7" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.GetDownloadClientsFixture" name="should_return_blocked_clients_when_filter_disabled" />
+    </UnitTest>
+    <UnitTest name="should_return_untagged_indexer_client_when_other_clients_match_series_tags" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="ec36eaa4-293d-d0cd-11a2-77c40b1e62ac">
+      <Execution id="e7e22317-8789-4217-8f1a-34868ac80fac" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.GetDownloadClientsFixture" name="should_return_untagged_indexer_client_when_other_clients_match_series_tags" />
+    </UnitTest>
+    <UnitTest name="should_throw_when_all_clients_blocked_and_filter_enabled" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="5372566b-700f-1dc2-4ef7-568c456b122d">
+      <Execution id="43b15cce-3a67-4dde-9646-b2da615d5476" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.GetDownloadClientsFixture" name="should_throw_when_all_clients_blocked_and_filter_enabled" />
+    </UnitTest>
+    <UnitTest name="should_filter_blocked_clients_when_requested" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="dcf26334-97e8-a9f2-d351-cae5cc6f0f98">
+      <Execution id="9a40d400-a8b4-4f9f-b9c2-3fb91a97fbba" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.GetDownloadClientsFixture" name="should_filter_blocked_clients_when_requested" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="8a253c59-6ef6-e9e2-6d21-9094815c89ca" executionId="39871314-af8e-4e81-8d87-2bc2b6f08d6f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5372566b-700f-1dc2-4ef7-568c456b122d" executionId="43b15cce-3a67-4dde-9646-b2da615d5476" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="013d7f26-67b1-fef1-f4be-4f20bd341c4f" executionId="83dab56d-7683-46f2-8e56-f6ccedcb8b2d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c24e3817-f204-7fed-e877-18ff215b34c0" executionId="0eb2c8e5-b999-4f53-b391-6c17526c36bf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="022334ab-6eb1-9e9f-17f0-7494b748605d" executionId="45ead035-671b-4846-a1d1-1da1b10cb96e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4798b080-acc0-ca04-f40e-f49a6fdc79e4" executionId="5dd1e256-0669-4bbc-84ba-7a490a2c8b5a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="95784a1f-1943-a343-e439-402412c423ef" executionId="10985443-d5b1-42fa-a223-c8104ed61bfd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bc2c6efb-02f1-586e-84af-d93d50c29bce" executionId="f74ef4f6-dee5-406a-8fd7-0362c87a1e06" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1ba26c69-8721-2598-6b20-9f2a36635a59" executionId="174606c8-c718-4abc-a354-e8f1091e75f7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f8f4d4cf-6b3a-f272-e915-97259de509f7" executionId="b0392d03-b730-4117-9683-0e9d86dde38d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dcf26334-97e8-a9f2-d351-cae5cc6f0f98" executionId="9a40d400-a8b4-4f9f-b9c2-3fb91a97fbba" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5bc6dfd0-85e9-99d1-b36b-35027fe916ec" executionId="4f242cc9-19c5-4b76-bad7-f8d28d7fee78" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="42808c46-aab8-67b9-4496-1f08d3c879cb" executionId="17463986-c332-41bb-aac6-c835a481e785" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ec36eaa4-293d-d0cd-11a2-77c40b1e62ac" executionId="e7e22317-8789-4217-8f1a-34868ac80fac" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="573d1e70-578b-c163-9ebe-4b9618f0a72a" executionId="5c79ac62-64a4-4198-b766-41cdc99ce084" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="afd8aa8c-031b-45e0-9c69-2506e20e4777" executionId="de5ea63b-12b0-4fa4-898e-8b764a3579be" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f03cd946-ac41-e5fd-97e7-87a1c242ba04" executionId="cc8ab2f8-10a8-49d9-a937-c6a0643486dd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="17" executed="17" passed="16" failed="1" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 6.3.1.0: Test execution started
+Running selected tests in ${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll
+   NUnit3TestExecutor discovered 17 of 17 NUnit test cases using Current Discovery mode, Non-Explicit run
+15:16:44.8 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_filter_blocked_clients_when_requested --- 
+15:16:44.8 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_filter_blocked_clients_when_requested --- 
+
+15:16:44.8 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_filter_clients_by_tags --- 
+15:16:44.8 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_filter_clients_by_tags --- 
+
+15:16:44.8 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_all_available_clients_for_protocol --- 
+15:16:44.8 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_all_available_clients_for_protocol --- 
+
+15:16:44.8 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_blocked_clients_when_filter_disabled --- 
+15:16:44.8 Trace: No non-blocked Download Client available for Torrent, returning all clients. 
+15:16:44.8 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_blocked_clients_when_filter_disabled --- 
+
+15:16:44.8 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_clients_ordered_by_priority_then_by_last_used --- 
+15:16:44.8 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_clients_ordered_by_priority_then_by_last_used --- 
+
+15:16:44.8 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_empty_when_no_clients_available_for_protocol --- 
+15:16:44.8 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_empty_when_no_clients_available_for_protocol --- 
+
+15:16:44.8 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_indexer_specific_client_when_specified --- 
+15:16:44.8 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_indexer_specific_client_when_specified --- 
+
+15:16:44.8 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_non_tagged_clients_when_no_matching_tags --- 
+15:16:44.8 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_non_tagged_clients_when_no_matching_tags --- 
+
+15:16:44.8 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_tagged_indexer_client_when_series_tag_matches --- 
+15:16:44.8 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_tagged_indexer_client_when_series_tag_matches --- 
+
+15:16:44.8 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_untagged_indexer_client_when_other_clients_match_series_tags --- 
+15:16:44.8 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_untagged_indexer_client_when_other_clients_match_series_tags --- 
+
+15:16:44.8 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_rotate_clients_within_same_priority_based_on_last_used --- 
+15:16:44.8 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_rotate_clients_within_same_priority_based_on_last_used --- 
+
+15:16:44.8 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_throw_when_all_clients_blocked_and_filter_enabled --- 
+15:16:44.8 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_throw_when_all_clients_blocked_and_filter_enabled --- 
+
+15:16:44.8 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_throw_when_all_clients_have_non_matching_tags --- 
+15:16:44.8 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_throw_when_all_clients_have_non_matching_tags --- 
+
+15:16:44.8 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_throw_when_indexer_client_does_not_exist --- 
+15:16:44.8 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_throw_when_indexer_client_does_not_exist --- 
+
+15:16:44.8 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_throw_when_indexer_client_is_blocked_and_filter_enabled --- 
+15:16:44.8 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_throw_when_indexer_client_is_blocked_and_filter_enabled --- 
+
+15:16:44.8 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_throw_when_indexer_client_tags_do_not_match_series --- 
+15:16:44.8 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_throw_when_indexer_client_tags_do_not_match_series --- 
+
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

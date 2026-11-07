@@ -1,0 +1,77 @@
+Test run for ${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll (.NETCoreApp,Version=v10.0)
+A total of 1 test files matched the specified pattern.
+NUnit Adapter 6.3.1.0: Test execution started
+Running selected tests in ${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll
+   NUnit3TestExecutor discovered 17 of 17 NUnit test cases using Current Discovery mode, Non-Explicit run
+15:17:04.0 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_filter_blocked_clients_when_requested --- 
+15:17:04.0 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_filter_blocked_clients_when_requested --- 
+
+15:17:04.0 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_filter_clients_by_tags --- 
+15:17:04.0 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_filter_clients_by_tags --- 
+
+15:17:04.0 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_all_available_clients_for_protocol --- 
+15:17:04.0 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_all_available_clients_for_protocol --- 
+
+15:17:04.0 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_blocked_clients_when_filter_disabled --- 
+15:17:04.0 Trace: No non-blocked Download Client available for Torrent, returning all clients. 
+15:17:04.0 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_blocked_clients_when_filter_disabled --- 
+
+15:17:04.0 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_clients_ordered_by_priority_then_by_last_used --- 
+15:17:04.0 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_clients_ordered_by_priority_then_by_last_used --- 
+
+15:17:04.0 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_empty_when_no_clients_available_for_protocol --- 
+15:17:04.0 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_empty_when_no_clients_available_for_protocol --- 
+
+15:17:04.0 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_indexer_specific_client_when_specified --- 
+15:17:04.0 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_indexer_specific_client_when_specified --- 
+
+15:17:04.0 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_non_tagged_clients_when_no_matching_tags --- 
+15:17:04.0 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_non_tagged_clients_when_no_matching_tags --- 
+
+  Passed should_combine_tags_and_priority_filtering [214 ms]
+  Passed should_filter_blocked_clients_when_requested [15 ms]
+  Passed should_filter_clients_by_tags [< 1 ms]
+  Passed should_return_all_available_clients_for_protocol [< 1 ms]
+  Passed should_return_blocked_clients_when_filter_disabled [< 1 ms]
+  Passed should_return_clients_ordered_by_priority_then_by_last_used [< 1 ms]
+  Passed should_return_empty_when_no_clients_available_for_protocol [1 ms]
+  Passed should_return_indexer_specific_client_when_specified [8 ms]
+  Passed should_return_non_tagged_clients_when_no_matching_tags [< 1 ms]
+15:17:04.0 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_tagged_indexer_client_when_series_tag_matches --- 
+15:17:04.0 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_tagged_indexer_client_when_series_tag_matches --- 
+
+15:17:04.0 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_untagged_indexer_client_when_other_clients_match_series_tags --- 
+15:17:04.0 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_untagged_indexer_client_when_other_clients_match_series_tags --- 
+
+15:17:04.0 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_rotate_clients_within_same_priority_based_on_last_used --- 
+15:17:04.0 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_rotate_clients_within_same_priority_based_on_last_used --- 
+
+15:17:04.0 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_throw_when_all_clients_blocked_and_filter_enabled --- 
+15:17:04.0 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_throw_when_all_clients_blocked_and_filter_enabled --- 
+
+15:17:04.0 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_throw_when_all_clients_have_non_matching_tags --- 
+15:17:04.0 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_throw_when_all_clients_have_non_matching_tags --- 
+
+15:17:04.0 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_throw_when_indexer_client_does_not_exist --- 
+15:17:04.0 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_throw_when_indexer_client_does_not_exist --- 
+
+15:17:04.0 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_throw_when_indexer_client_is_blocked_and_filter_enabled --- 
+15:17:04.0 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_throw_when_indexer_client_is_blocked_and_filter_enabled --- 
+
+15:17:04.0 Info: --- Start: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_throw_when_indexer_client_tags_do_not_match_series --- 
+15:17:04.0 Info: --- End: NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_throw_when_indexer_client_tags_do_not_match_series --- 
+
+  Passed should_return_tagged_indexer_client_when_series_tag_matches [< 1 ms]
+  Passed should_return_untagged_indexer_client_when_other_clients_match_series_tags [1 ms]
+  Passed should_rotate_clients_within_same_priority_based_on_last_used [< 1 ms]
+  Passed should_throw_when_all_clients_blocked_and_filter_enabled [2 ms]
+  Passed should_throw_when_all_clients_have_non_matching_tags [< 1 ms]
+  Passed should_throw_when_indexer_client_does_not_exist [< 1 ms]
+  Passed should_throw_when_indexer_client_is_blocked_and_filter_enabled [< 1 ms]
+  Passed should_throw_when_indexer_client_tags_do_not_match_series [< 1 ms]
+
+Test Run Successful.
+Total tests: 17
+     Passed: 17
+ Total time: 1.1151 Seconds
+Results File: ${EVIDENCE_OUTPUT}/pr-2/after/tests.trx

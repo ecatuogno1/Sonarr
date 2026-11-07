@@ -1,0 +1,55 @@
+{
+  "pr": 2,
+  "phase": "before",
+  "head": "c1b69fa302c9a2f018046b33bd4bb28946c5524e",
+  "baseline": "c018578e4b79ee048575c02d7a8aa2b929e4b837",
+  "restoredFilesFromBaseline": [
+    "src/NzbDrone.Core/Download/DownloadClientProvider.cs"
+  ],
+  "command": [
+    "${DOTNET_ROOT}/dotnet",
+    "test",
+    "src/NzbDrone.Core.Test/Sonarr.Core.Test.csproj",
+    "-c",
+    "Debug",
+    "-p:Platform=Posix",
+    "-p:SolutionDir=${SONARR_REPO}/src/",
+    "--filter",
+    "FullyQualifiedName~GetDownloadClientsFixture",
+    "--logger",
+    "console;verbosity=normal",
+    "--logger",
+    "trx;LogFileName=tests.trx",
+    "--results-directory",
+    "${EVIDENCE_OUTPUT}/pr-2/before",
+    "--verbosity",
+    "quiet"
+  ],
+  "exitCode": 1,
+  "counts": {
+    "total": "17",
+    "executed": "17",
+    "passed": "16",
+    "failed": "1",
+    "error": "0",
+    "timeout": "0",
+    "aborted": "0",
+    "inconclusive": "0",
+    "passedButRunAborted": "0",
+    "notRunnable": "0",
+    "notExecuted": "0",
+    "disconnected": "0",
+    "warning": "0",
+    "completed": "0",
+    "inProgress": "0",
+    "pending": "0"
+  },
+  "failures": [
+    {
+      "test": "should_return_untagged_indexer_client_when_other_clients_match_series_tags",
+      "message": "NzbDrone.Core.Download.Clients.DownloadClientUnavailableException : Indexer specified download client does not exist for Name1",
+      "stack": "   at NzbDrone.Core.Download.DownloadClientProvider.GetFilteredDownloadClients(DownloadProtocol downloadProtocol, Int32 indexerId, Boolean filterBlockedClients, HashSet`1 tags, Boolean forSingleClient) in ./NzbDrone.Core/Download/DownloadClientProvider.cs:line 211\n   at NzbDrone.Core.Download.DownloadClientProvider.GetDownloadClients(DownloadProtocol downloadProtocol, Int32 indexerId, Boolean filterBlockedClients, HashSet`1 tags) in ./NzbDrone.Core/Download/DownloadClientProvider.cs:line 78\n   at NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_untagged_indexer_client_when_other_clients_match_series_tags() in ./NzbDrone.Core.Test/Download/DownloadClientProvider/GetDownloadClientsFixture.cs:line 305\n   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n1)    at NzbDrone.Core.Download.DownloadClientProvider.GetFilteredDownloadClients(DownloadProtocol downloadProtocol, Int32 indexerId, Boolean filterBlockedClients, HashSet`1 tags, Boolean forSingleClient) in ./NzbDrone.Core/Download/DownloadClientProvider.cs:line 211\n   at NzbDrone.Core.Download.DownloadClientProvider.GetDownloadClients(DownloadProtocol downloadProtocol, Int32 indexerId, Boolean filterBlockedClients, HashSet`1 tags) in ./NzbDrone.Core/Download/DownloadClientProvider.cs:line 78\n   at NzbDrone.Core.Test.Download.GetDownloadClientsFixture.should_return_untagged_indexer_client_when_other_clients_match_series_tags() in ./NzbDrone.Core.Test/Download/DownloadClientProvider/GetDownloadClientsFixture.cs:line 305\n   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n"
+    }
+  ],
+  "startedUTC": "2026-11-07T23:15:08.853844+00:00"
+}

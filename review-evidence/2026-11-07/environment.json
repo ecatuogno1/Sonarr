@@ -1,0 +1,11 @@
+{
+  "recordedUTC": "2026-11-07T23:16:58.919705+00:00",
+  "os": "Darwin",
+  "architecture": "arm64",
+  "sdk": "10.0.403",
+  "configuration": "Debug",
+  "platform": "Posix",
+  "analyzers": "enabled",
+  "base": "c018578e4b79ee048575c02d7a8aa2b929e4b837",
+  "scope": "Deterministic fixtures with mocked downloads. No real download clients, library files, or production server are used."
+}

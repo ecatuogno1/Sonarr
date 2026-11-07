@@ -1,0 +1,395 @@
+Test run for ${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll (.NETCoreApp,Version=v10.0)
+A total of 1 test files matched the specified pattern.
+NUnit Adapter 6.3.1.0: Test execution started
+Running selected tests in ${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll
+   NUnit3TestExecutor discovered 28 of 28 NUnit test cases using Current Discovery mode, Non-Explicit run
+15:17:24.2 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_block_import_when_download_client_reports_a_rejected_file_that_is_not_failed --- 
+15:17:24.2 Debug: Not all episodes have been imported for the release 'Drone.S01E01.HDTV' 
+15:17:24.2 Debug: Download 'Drone.S01E01.HDTV' has no files to import, but the download client reports a rejected file: Caution: Found executable file with extension: .bat 
+15:17:24.2 Warn: Import blocked for 'Drone.S01E01.HDTV': Caution: Found executable file with extension: .bat 
+
+15:17:24.2 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_fail_download_when_nothing_was_imported_and_download_client_reports_a_rejected_file --- 
+15:17:24.2 Debug: Not all episodes have been imported for the release 'Drone.S01E01.HDTV' 
+15:17:24.2 Debug: Download 'Drone.S01E01.HDTV' has no files to import, but the download client reports a rejected file: Caution: Found executable file with extension: .bat 
+15:17:24.2 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_fail_download_when_nothing_was_imported_and_download_client_reports_a_rejected_file --- 
+
+15:17:24.2 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_mark_as_imported_if_all_episodes_were_imported --- 
+15:17:24.2 Debug: All episodes were imported for Drone.S01E01.HDTV 
+15:17:24.2 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_mark_as_imported_if_all_episodes_were_imported --- 
+
+15:17:24.2 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_mark_as_imported_if_all_episodes_were_imported_but_extra_files_were_not --- 
+15:17:24.2 Debug: All episodes were imported for Drone.S01E01.HDTV 
+15:17:24.2 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_mark_as_imported_if_all_episodes_were_imported_but_extra_files_were_not --- 
+
+15:17:24.2 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_mark_as_imported_if_all_episodes_were_imported_including_history --- 
+15:17:24.2 Debug: All episodes were imported in history for Drone.S01E01.HDTV 
+15:17:24.2 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_mark_as_imported_if_all_episodes_were_imported_including_history --- 
+
+15:17:24.2 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_mark_as_imported_if_double_episode_file_is_imported --- 
+15:17:24.2 Debug: All episodes were imported for Drone.S01E01.HDTV 
+15:17:24.2 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_mark_as_imported_if_double_episode_file_is_imported --- 
+
+15:17:24.2 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_mark_as_imported_if_the_download_can_be_tracked_using_the_source_seriesid --- 
+15:17:24.2 Debug: All episodes were imported for Droned Pilot 
+15:17:24.2 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_mark_as_imported_if_the_download_can_be_tracked_using_the_source_seriesid --- 
+
+15:17:24.2 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_mark_multi_season_download_as_imported_if_all_seasons_were_imported --- 
+15:17:24.3 Debug: Parsing string 'Drone.S01-S03.1080p.BluRay' 
+15:17:24.7 Trace: ^(?<title>.+?)(Complete Series)?[-_. ]+(?:S|(?:Season|Saison|Series|Stagione)[_. ])(?<season>(?<!\d+)(?:\d{1,2})(?!\d+))(?:(?:[-_. ]{1}|[-_. ]{3})(?:S|(?:Season|Saison|Series|Stagione)[_. ])?(?<season>(?<!\d+)(?:\d{1,2})(?!\d+))){1,} 
+15:17:24.7 Debug: Episode Parsed. Drone - Seasons 01-03  
+15:17:24.8 Debug: Languages parsed: Unknown 
+15:17:24.8 Debug: Trying to parse quality for 'Drone.S01-S03.1080p.BluRay' 
+15:17:24.9 Debug: Quality parsed: Bluray-1080p v1 
+15:17:24.9 Debug: Release Group parsed:  
+15:17:24.9 Debug: All episodes were imported for Drone.S01-S03.1080p.BluRay 
+15:17:24.9 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_mark_multi_season_download_as_imported_if_all_seasons_were_imported --- 
+
+  Passed should_block_import_and_publish_manual_interaction_event_for_dangerous_file_that_is_not_failed [269 ms]
+  Failed should_block_import_when_download_client_reports_a_rejected_file_that_is_not_failed [24 ms]
+  Error Message:
+   
+
+****************************************************************************************
+
+0 Warn(s) were expected but 1 were logged.
+
+[Warn] String: Import blocked for 'Drone.S01E01.HDTV': Caution: Found executable file with extension: .bat 
+
+****************************************************************************************
+  Stack Trace:
+     at NzbDrone.Test.Common.ExceptionVerification.Expected(LogLevel level, Int32 count) in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 158
+   at NzbDrone.Test.Common.ExceptionVerification.ExpectedWarns(Int32 count) in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 99
+   at NzbDrone.Test.Common.ExceptionVerification.AssertNoUnexpectedLogs() in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 42
+   at NzbDrone.Test.Common.LoggingTest.LoggingDownBase() in ./NzbDrone.Test.Common/LoggingTest.cs:line 101
+   at InvokeStub_LoggingTest.LoggingDownBase(Object, Object, IntPtr*)
+
+1)    at NzbDrone.Test.Common.ExceptionVerification.Expected(LogLevel level, Int32 count) in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 158
+   at NzbDrone.Test.Common.ExceptionVerification.ExpectedWarns(Int32 count) in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 99
+   at NzbDrone.Test.Common.ExceptionVerification.AssertNoUnexpectedLogs() in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 42
+   at NzbDrone.Test.Common.LoggingTest.LoggingDownBase() in ./NzbDrone.Test.Common/LoggingTest.cs:line 101
+   at InvokeStub_LoggingTest.LoggingDownBase(Object, Object, IntPtr*)
+
+
+  Standard Output Messages:
+ 15:17:24.2 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_block_import_when_download_client_reports_a_rejected_file_that_is_not_failed --- 
+ 15:17:24.2 Debug: Not all episodes have been imported for the release 'Drone.S01E01.HDTV' 
+ 15:17:24.2 Debug: Download 'Drone.S01E01.HDTV' has no files to import, but the download client reports a rejected file: Caution: Found executable file with extension: .bat 
+ 15:17:24.2 Warn: Import blocked for 'Drone.S01E01.HDTV': Caution: Found executable file with extension: .bat 
+
+
+  Passed should_fail_download_when_nothing_was_imported_and_download_client_reports_a_rejected_file [2 ms]
+  Passed should_mark_as_imported_if_all_episodes_were_imported [2 ms]
+  Passed should_mark_as_imported_if_all_episodes_were_imported_but_extra_files_were_not [2 ms]
+  Passed should_mark_as_imported_if_all_episodes_were_imported_including_history [7 ms]
+  Passed should_mark_as_imported_if_double_episode_file_is_imported [1 ms]
+  Passed should_mark_as_imported_if_the_download_can_be_tracked_using_the_source_seriesid [3 ms]
+  Passed should_mark_multi_season_download_as_imported_if_all_seasons_were_imported [647 ms]
+15:17:24.9 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_check_download_client_files_when_files_were_imported --- 
+15:17:24.9 Debug: All episodes were imported for Drone.S01E01.HDTV 
+15:17:24.9 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_check_download_client_files_when_files_were_imported --- 
+
+15:17:24.9 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_mark_as_imported_if_all_files_were_rejected --- 
+15:17:24.9 Debug: Not all episodes have been imported for the release 'Drone.S01E01.HDTV' 
+15:17:24.9 Warn: Import blocked for 'Drone.S01E01.HDTV': Test Failure; Test Failure 
+
+15:17:24.9 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_mark_as_imported_if_all_files_were_skipped --- 
+15:17:24.9 Debug: Not all episodes have been imported for the release 'Drone.S01E01.HDTV' 
+15:17:24.9 Warn: Import blocked for 'Drone.S01E01.HDTV': Test Failure; Test Failure 
+
+15:17:24.9 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_mark_as_imported_if_no_episodes_were_parsed --- 
+15:17:24.9 Debug: Not all episodes have been imported for the release 'Drone.S01E01.HDTV' 
+15:17:24.9 Warn: Import blocked for 'Drone.S01E01.HDTV': Test Failure; Test Failure 
+
+15:17:24.9 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_mark_as_imported_if_some_of_episodes_were_not_imported --- 
+15:17:24.9 Debug: Not all episodes have been imported for the release 'Drone.S01E01.HDTV' 
+15:17:24.9 Warn: Import blocked for 'Drone.S01E01.HDTV': Test Failure; Test Failure 
+
+15:17:24.9 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_mark_as_imported_if_some_of_episodes_were_not_imported_including_history --- 
+15:17:24.9 Debug: Not all episodes have been imported for the release 'Drone.S01E01.HDTV' 
+15:17:24.9 Warn: Import blocked for 'Drone.S01E01.HDTV': Test Failure; Test Failure 
+
+15:17:24.9 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_mark_multi_season_download_as_imported_if_only_first_season_was_imported --- 
+15:17:24.9 Debug: Parsing string 'Drone.S01-S03.1080p.BluRay' 
+15:17:24.9 Trace: ^(?<title>.+?)(Complete Series)?[-_. ]+(?:S|(?:Season|Saison|Series|Stagione)[_. ])(?<season>(?<!\d+)(?:\d{1,2})(?!\d+))(?:(?:[-_. ]{1}|[-_. ]{3})(?:S|(?:Season|Saison|Series|Stagione)[_. ])?(?<season>(?<!\d+)(?:\d{1,2})(?!\d+))){1,} 
+15:17:24.9 Debug: Episode Parsed. Drone - Seasons 01-03  
+15:17:24.9 Debug: Languages parsed: Unknown 
+15:17:24.9 Debug: Trying to parse quality for 'Drone.S01-S03.1080p.BluRay' 
+15:17:24.9 Debug: Quality parsed: Bluray-1080p v1 
+15:17:24.9 Debug: Release Group parsed:  
+15:17:24.9 Debug: Not all episodes have been imported for the release 'Drone.S01-S03.1080p.BluRay' 
+15:17:24.9 Warn: Import blocked for 'Drone.S01-S03.1080p.BluRay':  
+15:17:24.9 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_mark_multi_season_download_as_imported_if_only_first_season_was_imported --- 
+
+15:17:24.9 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_warn_when_download_client_reports_a_rejected_file_that_is_not_processed --- 
+15:17:24.9 Debug: Not all episodes have been imported for the release 'Drone.S01E01.HDTV' 
+15:17:24.9 Debug: Download 'Drone.S01E01.HDTV' has no files to import, but the download client reports a rejected file: Caution: Found executable file with extension: .bat 
+15:17:24.9 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_warn_when_download_client_reports_a_rejected_file_that_is_not_processed --- 
+
+15:17:24.9 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_warn_when_nothing_was_imported_and_download_client_files_are_not_rejected --- 
+15:17:24.9 Debug: Not all episodes have been imported for the release 'Drone.S01E01.HDTV' 
+15:17:24.9 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_warn_when_nothing_was_imported_and_download_client_files_are_not_rejected --- 
+
+  Passed should_not_check_download_client_files_when_files_were_imported [2 ms]
+  Failed should_not_mark_as_imported_if_all_files_were_rejected [3 ms]
+  Error Message:
+   
+
+****************************************************************************************
+
+0 Warn(s) were expected but 1 were logged.
+
+[Warn] String: Import blocked for 'Drone.S01E01.HDTV': Test Failure; Test Failure 
+
+****************************************************************************************
+  Stack Trace:
+     at NzbDrone.Test.Common.ExceptionVerification.Expected(LogLevel level, Int32 count) in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 158
+   at NzbDrone.Test.Common.ExceptionVerification.ExpectedWarns(Int32 count) in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 99
+   at NzbDrone.Test.Common.ExceptionVerification.AssertNoUnexpectedLogs() in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 42
+   at NzbDrone.Test.Common.LoggingTest.LoggingDownBase() in ./NzbDrone.Test.Common/LoggingTest.cs:line 101
+   at InvokeStub_LoggingTest.LoggingDownBase(Object, Object, IntPtr*)
+
+1)    at NzbDrone.Test.Common.ExceptionVerification.Expected(LogLevel level, Int32 count) in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 158
+   at NzbDrone.Test.Common.ExceptionVerification.ExpectedWarns(Int32 count) in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 99
+   at NzbDrone.Test.Common.ExceptionVerification.AssertNoUnexpectedLogs() in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 42
+   at NzbDrone.Test.Common.LoggingTest.LoggingDownBase() in ./NzbDrone.Test.Common/LoggingTest.cs:line 101
+   at InvokeStub_LoggingTest.LoggingDownBase(Object, Object, IntPtr*)
+
+
+  Standard Output Messages:
+ 15:17:24.9 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_mark_as_imported_if_all_files_were_rejected --- 
+ 15:17:24.9 Debug: Not all episodes have been imported for the release 'Drone.S01E01.HDTV' 
+ 15:17:24.9 Warn: Import blocked for 'Drone.S01E01.HDTV': Test Failure; Test Failure 
+
+
+  Failed should_not_mark_as_imported_if_all_files_were_skipped [1 ms]
+  Error Message:
+   
+
+****************************************************************************************
+
+0 Warn(s) were expected but 1 were logged.
+
+[Warn] String: Import blocked for 'Drone.S01E01.HDTV': Test Failure; Test Failure 
+
+****************************************************************************************
+  Stack Trace:
+     at NzbDrone.Test.Common.ExceptionVerification.Expected(LogLevel level, Int32 count) in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 158
+   at NzbDrone.Test.Common.ExceptionVerification.ExpectedWarns(Int32 count) in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 99
+   at NzbDrone.Test.Common.ExceptionVerification.AssertNoUnexpectedLogs() in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 42
+   at NzbDrone.Test.Common.LoggingTest.LoggingDownBase() in ./NzbDrone.Test.Common/LoggingTest.cs:line 101
+   at InvokeStub_LoggingTest.LoggingDownBase(Object, Object, IntPtr*)
+
+1)    at NzbDrone.Test.Common.ExceptionVerification.Expected(LogLevel level, Int32 count) in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 158
+   at NzbDrone.Test.Common.ExceptionVerification.ExpectedWarns(Int32 count) in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 99
+   at NzbDrone.Test.Common.ExceptionVerification.AssertNoUnexpectedLogs() in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 42
+   at NzbDrone.Test.Common.LoggingTest.LoggingDownBase() in ./NzbDrone.Test.Common/LoggingTest.cs:line 101
+   at InvokeStub_LoggingTest.LoggingDownBase(Object, Object, IntPtr*)
+
+
+  Standard Output Messages:
+ 15:17:24.9 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_mark_as_imported_if_all_files_were_skipped --- 
+ 15:17:24.9 Debug: Not all episodes have been imported for the release 'Drone.S01E01.HDTV' 
+ 15:17:24.9 Warn: Import blocked for 'Drone.S01E01.HDTV': Test Failure; Test Failure 
+
+
+  Failed should_not_mark_as_imported_if_no_episodes_were_parsed [1 ms]
+  Error Message:
+   
+
+****************************************************************************************
+
+0 Warn(s) were expected but 1 were logged.
+
+[Warn] String: Import blocked for 'Drone.S01E01.HDTV': Test Failure; Test Failure 
+
+****************************************************************************************
+  Stack Trace:
+     at NzbDrone.Test.Common.ExceptionVerification.Expected(LogLevel level, Int32 count) in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 158
+   at NzbDrone.Test.Common.ExceptionVerification.ExpectedWarns(Int32 count) in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 99
+   at NzbDrone.Test.Common.ExceptionVerification.AssertNoUnexpectedLogs() in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 42
+   at NzbDrone.Test.Common.LoggingTest.LoggingDownBase() in ./NzbDrone.Test.Common/LoggingTest.cs:line 101
+   at InvokeStub_LoggingTest.LoggingDownBase(Object, Object, IntPtr*)
+
+1)    at NzbDrone.Test.Common.ExceptionVerification.Expected(LogLevel level, Int32 count) in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 158
+   at NzbDrone.Test.Common.ExceptionVerification.ExpectedWarns(Int32 count) in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 99
+   at NzbDrone.Test.Common.ExceptionVerification.AssertNoUnexpectedLogs() in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 42
+   at NzbDrone.Test.Common.LoggingTest.LoggingDownBase() in ./NzbDrone.Test.Common/LoggingTest.cs:line 101
+   at InvokeStub_LoggingTest.LoggingDownBase(Object, Object, IntPtr*)
+
+
+  Standard Output Messages:
+ 15:17:24.9 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_mark_as_imported_if_no_episodes_were_parsed --- 
+ 15:17:24.9 Debug: Not all episodes have been imported for the release 'Drone.S01E01.HDTV' 
+ 15:17:24.9 Warn: Import blocked for 'Drone.S01E01.HDTV': Test Failure; Test Failure 
+
+
+  Failed should_not_mark_as_imported_if_some_of_episodes_were_not_imported [1 ms]
+  Error Message:
+   
+
+****************************************************************************************
+
+0 Warn(s) were expected but 1 were logged.
+
+[Warn] String: Import blocked for 'Drone.S01E01.HDTV': Test Failure; Test Failure 
+
+****************************************************************************************
+  Stack Trace:
+     at NzbDrone.Test.Common.ExceptionVerification.Expected(LogLevel level, Int32 count) in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 158
+   at NzbDrone.Test.Common.ExceptionVerification.ExpectedWarns(Int32 count) in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 99
+   at NzbDrone.Test.Common.ExceptionVerification.AssertNoUnexpectedLogs() in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 42
+   at NzbDrone.Test.Common.LoggingTest.LoggingDownBase() in ./NzbDrone.Test.Common/LoggingTest.cs:line 101
+   at InvokeStub_LoggingTest.LoggingDownBase(Object, Object, IntPtr*)
+
+1)    at NzbDrone.Test.Common.ExceptionVerification.Expected(LogLevel level, Int32 count) in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 158
+   at NzbDrone.Test.Common.ExceptionVerification.ExpectedWarns(Int32 count) in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 99
+   at NzbDrone.Test.Common.ExceptionVerification.AssertNoUnexpectedLogs() in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 42
+   at NzbDrone.Test.Common.LoggingTest.LoggingDownBase() in ./NzbDrone.Test.Common/LoggingTest.cs:line 101
+   at InvokeStub_LoggingTest.LoggingDownBase(Object, Object, IntPtr*)
+
+
+  Standard Output Messages:
+ 15:17:24.9 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_mark_as_imported_if_some_of_episodes_were_not_imported --- 
+ 15:17:24.9 Debug: Not all episodes have been imported for the release 'Drone.S01E01.HDTV' 
+ 15:17:24.9 Warn: Import blocked for 'Drone.S01E01.HDTV': Test Failure; Test Failure 
+
+
+  Failed should_not_mark_as_imported_if_some_of_episodes_were_not_imported_including_history [2 ms]
+  Error Message:
+   
+
+****************************************************************************************
+
+0 Warn(s) were expected but 1 were logged.
+
+[Warn] String: Import blocked for 'Drone.S01E01.HDTV': Test Failure; Test Failure 
+
+****************************************************************************************
+  Stack Trace:
+     at NzbDrone.Test.Common.ExceptionVerification.Expected(LogLevel level, Int32 count) in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 158
+   at NzbDrone.Test.Common.ExceptionVerification.ExpectedWarns(Int32 count) in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 99
+   at NzbDrone.Test.Common.ExceptionVerification.AssertNoUnexpectedLogs() in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 42
+   at NzbDrone.Test.Common.LoggingTest.LoggingDownBase() in ./NzbDrone.Test.Common/LoggingTest.cs:line 101
+   at InvokeStub_LoggingTest.LoggingDownBase(Object, Object, IntPtr*)
+
+1)    at NzbDrone.Test.Common.ExceptionVerification.Expected(LogLevel level, Int32 count) in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 158
+   at NzbDrone.Test.Common.ExceptionVerification.ExpectedWarns(Int32 count) in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 99
+   at NzbDrone.Test.Common.ExceptionVerification.AssertNoUnexpectedLogs() in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 42
+   at NzbDrone.Test.Common.LoggingTest.LoggingDownBase() in ./NzbDrone.Test.Common/LoggingTest.cs:line 101
+   at InvokeStub_LoggingTest.LoggingDownBase(Object, Object, IntPtr*)
+
+
+  Standard Output Messages:
+ 15:17:24.9 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_mark_as_imported_if_some_of_episodes_were_not_imported_including_history --- 
+ 15:17:24.9 Debug: Not all episodes have been imported for the release 'Drone.S01E01.HDTV' 
+ 15:17:24.9 Warn: Import blocked for 'Drone.S01E01.HDTV': Test Failure; Test Failure 
+
+
+  Passed should_not_mark_multi_season_download_as_imported_if_only_first_season_was_imported [1 ms]
+  Passed should_warn_when_download_client_reports_a_rejected_file_that_is_not_processed [1 ms]
+  Passed should_warn_when_nothing_was_imported_and_download_client_files_are_not_rejected [1 ms]
+15:17:24.9 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_download_status_isnt_completed(Downloading) --- 
+15:17:24.9 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_download_status_isnt_completed(Downloading) --- 
+
+15:17:24.9 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_download_status_isnt_completed(Failed) --- 
+15:17:24.9 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_download_status_isnt_completed(Failed) --- 
+
+15:17:24.9 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_download_status_isnt_completed(Queued) --- 
+15:17:24.9 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_download_status_isnt_completed(Queued) --- 
+
+15:17:24.9 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_download_status_isnt_completed(Paused) --- 
+15:17:24.9 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_download_status_isnt_completed(Paused) --- 
+
+15:17:24.9 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_download_status_isnt_completed(Warning) --- 
+15:17:24.9 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_download_status_isnt_completed(Warning) --- 
+
+15:17:24.9 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_matching_history_is_not_found_and_no_category_specified --- 
+15:17:24.9 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_matching_history_is_not_found_and_no_category_specified --- 
+
+15:17:24.9 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_output_path_is_empty --- 
+15:17:24.9 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_output_path_is_empty --- 
+
+15:17:24.9 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_the_download_cannot_be_tracked_using_the_source_title_as_it_was_initiated_externally --- 
+15:17:24.9 Warn: Import blocked for 'Droned Pilot': Series title mismatch; automatic import is not possible. Check the download troubleshooting entry on the wiki for common causes. 
+
+15:17:24.9 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_when_there_is_a_title_mismatch --- 
+15:17:24.9 Warn: Import blocked for 'Drone.S01E01.HDTV': Series title mismatch; automatic import is not possible. Check the download troubleshooting entry on the wiki for common causes. 
+
+  Passed should_not_process_if_download_status_isnt_completed(Downloading) [2 ms]
+  Passed should_not_process_if_download_status_isnt_completed(Failed) [1 ms]
+  Passed should_not_process_if_download_status_isnt_completed(Queued) [< 1 ms]
+  Passed should_not_process_if_download_status_isnt_completed(Paused) [4 ms]
+  Passed should_not_process_if_download_status_isnt_completed(Warning) [< 1 ms]
+  Passed should_not_process_if_matching_history_is_not_found_and_no_category_specified [1 ms]
+  Passed should_not_process_if_output_path_is_empty [< 1 ms]
+  Failed should_not_process_if_the_download_cannot_be_tracked_using_the_source_title_as_it_was_initiated_externally [2 ms]
+  Error Message:
+   
+
+****************************************************************************************
+
+0 Warn(s) were expected but 1 were logged.
+
+[Warn] String: Import blocked for 'Droned Pilot': Series title mismatch; automatic import is not possible. Check the download troubleshooting entry on the wiki for common causes. 
+
+****************************************************************************************
+  Stack Trace:
+     at NzbDrone.Test.Common.ExceptionVerification.Expected(LogLevel level, Int32 count) in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 158
+   at NzbDrone.Test.Common.ExceptionVerification.ExpectedWarns(Int32 count) in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 99
+   at NzbDrone.Test.Common.ExceptionVerification.AssertNoUnexpectedLogs() in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 42
+   at NzbDrone.Test.Common.LoggingTest.LoggingDownBase() in ./NzbDrone.Test.Common/LoggingTest.cs:line 101
+   at InvokeStub_LoggingTest.LoggingDownBase(Object, Object, IntPtr*)
+
+1)    at NzbDrone.Test.Common.ExceptionVerification.Expected(LogLevel level, Int32 count) in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 158
+   at NzbDrone.Test.Common.ExceptionVerification.ExpectedWarns(Int32 count) in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 99
+   at NzbDrone.Test.Common.ExceptionVerification.AssertNoUnexpectedLogs() in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 42
+   at NzbDrone.Test.Common.LoggingTest.LoggingDownBase() in ./NzbDrone.Test.Common/LoggingTest.cs:line 101
+   at InvokeStub_LoggingTest.LoggingDownBase(Object, Object, IntPtr*)
+
+
+  Standard Output Messages:
+ 15:17:24.9 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_the_download_cannot_be_tracked_using_the_source_title_as_it_was_initiated_externally --- 
+ 15:17:24.9 Warn: Import blocked for 'Droned Pilot': Series title mismatch; automatic import is not possible. Check the download troubleshooting entry on the wiki for common causes. 
+
+
+  Failed should_not_process_when_there_is_a_title_mismatch [1 ms]
+  Error Message:
+   
+
+****************************************************************************************
+
+0 Warn(s) were expected but 1 were logged.
+
+[Warn] String: Import blocked for 'Drone.S01E01.HDTV': Series title mismatch; automatic import is not possible. Check the download troubleshooting entry on the wiki for common causes. 
+
+****************************************************************************************
+  Stack Trace:
+     at NzbDrone.Test.Common.ExceptionVerification.Expected(LogLevel level, Int32 count) in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 158
+   at NzbDrone.Test.Common.ExceptionVerification.ExpectedWarns(Int32 count) in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 99
+   at NzbDrone.Test.Common.ExceptionVerification.AssertNoUnexpectedLogs() in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 42
+   at NzbDrone.Test.Common.LoggingTest.LoggingDownBase() in ./NzbDrone.Test.Common/LoggingTest.cs:line 101
+   at InvokeStub_LoggingTest.LoggingDownBase(Object, Object, IntPtr*)
+
+1)    at NzbDrone.Test.Common.ExceptionVerification.Expected(LogLevel level, Int32 count) in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 158
+   at NzbDrone.Test.Common.ExceptionVerification.ExpectedWarns(Int32 count) in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 99
+   at NzbDrone.Test.Common.ExceptionVerification.AssertNoUnexpectedLogs() in ./NzbDrone.Test.Common/ExceptionVerification.cs:line 42
+   at NzbDrone.Test.Common.LoggingTest.LoggingDownBase() in ./NzbDrone.Test.Common/LoggingTest.cs:line 101
+   at InvokeStub_LoggingTest.LoggingDownBase(Object, Object, IntPtr*)
+
+
+  Standard Output Messages:
+ 15:17:24.9 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_when_there_is_a_title_mismatch --- 
+ 15:17:24.9 Warn: Import blocked for 'Drone.S01E01.HDTV': Series title mismatch; automatic import is not possible. Check the download troubleshooting entry on the wiki for common causes. 
+
+
+15:17:24.9 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_process_if_matching_history_is_not_found_but_category_specified --- 
+15:17:24.9 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_process_if_matching_history_is_not_found_but_category_specified --- 
+
+  Passed should_process_if_matching_history_is_not_found_but_category_specified [1 ms]
+
+Test Run Failed.
+Total tests: 28
+     Passed: 20
+     Failed: 8
+ Total time: 1.8413 Seconds
+Results File: ${EVIDENCE_OUTPUT}/pr-3/before/tests.trx

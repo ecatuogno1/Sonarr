@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="29afc30e-eef7-41d6-98af-cf5fa21ef5e0" name="@TEST-HOST 2026-11-07 15:15:52" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-07T15:15:52.0290280-08:00" queuing="2026-11-07T15:15:52.0290280-08:00" start="2026-11-07T15:15:49.6141550-08:00" finish="2026-11-07T15:15:52.0323680-08:00" />
+  <TestSettings name="default" id="70361fe4-4d06-48c2-bed3-6add93d271a3">
+    <Deployment runDeploymentRoot="_TEST-HOST_2026-11-07_15_15_52" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="b30e803a-cc82-4d98-a624-1d6ceb4923f1" testId="2f593c91-792e-8fbe-1abc-77e27a30fc45" testName="should_drop_multi_season_rejection_when_episodes_were_picked" computerName="TEST-HOST" duration="00:00:00.2463700" startTime="2026-11-07T15:15:51.7321200-08:00" endTime="2026-11-07T15:15:51.9784890-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b30e803a-cc82-4d98-a624-1d6ceb4923f1">
+      <Output>
+        <StdOut>15:15:51.7 Info: --- Start: NzbDrone.Core.Test.MediaFiles.EpisodeImport.Manual.ManualImportServiceFixture.should_drop_multi_season_rejection_when_episodes_were_picked --- 
+15:15:51.7 Debug: Language couldn't be parsed from release, falling back to series original language: English 
+15:15:51.7 Debug: Trying to parse quality for '/C/Downloads/Series.Title.S01-S03/Series.Title.E05.mkv' 
+15:15:51.7 Debug: Parsing string 'Series.Title.E05.mkv' 
+15:15:51.9 Trace: ^(?&lt;title&gt;.+?)(?:\W+(?:(?:(?&lt;!\()Part\W?|(?&lt;!\d+\W+)e)(?&lt;episode&gt;\d{1,2}(?!\d+|\))))+) 
+15:15:51.9 Debug: Episode Parsed. Series Title - S01E05  
+15:15:51.9 Debug: Languages parsed: Unknown 
+15:15:51.9 Debug: Trying to parse quality for 'Series.Title.E05.mkv' 
+15:15:51.9 Debug: Quality parsed: HDTV-720p v1 
+15:15:51.9 Debug: Release Group parsed:  
+15:15:51.9 Info: --- End: NzbDrone.Core.Test.MediaFiles.EpisodeImport.Manual.ManualImportServiceFixture.should_drop_multi_season_rejection_when_episodes_were_picked ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8a9058a4-a918-4f7a-a030-2e07455d6b16" testId="43024c69-ddcf-dad2-f83d-118061284bd7" testName="should_publish_download_completed_with_the_series_each_download_was_imported_into" computerName="TEST-HOST" duration="00:00:01.0663720" startTime="2026-11-07T15:15:50.6642190-08:00" endTime="2026-11-07T15:15:51.7305650-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8a9058a4-a918-4f7a-a030-2e07455d6b16">
+      <Output>
+        <ErrorInfo>
+          <Message>Expected value to be 2, but found 1.</Message>
+          <StackTrace>   at FluentAssertions.Execution.LateBoundTestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at NzbDrone.Core.Test.MediaFiles.EpisodeImport.Manual.ManualImportCompletionFixture.should_publish_download_completed_with_the_series_each_download_was_imported_into() in ./NzbDrone.Core.Test/MediaFiles/EpisodeImport/Manual/ManualImportCompletionFixture.cs:line 120
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5255da30-43ea-41f7-8c62-e361b090367a" testId="bd2872e1-d4eb-5139-f21e-42721b09bb12" testName="should_keep_other_rejections_when_episodes_were_picked" computerName="TEST-HOST" duration="00:00:00.0078810" startTime="2026-11-07T15:15:51.9785340-08:00" endTime="2026-11-07T15:15:51.9864150-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5255da30-43ea-41f7-8c62-e361b090367a">
+      <Output>
+        <StdOut>15:15:51.9 Info: --- Start: NzbDrone.Core.Test.MediaFiles.EpisodeImport.Manual.ManualImportServiceFixture.should_keep_other_rejections_when_episodes_were_picked --- 
+15:15:51.9 Debug: Language couldn't be parsed from release, falling back to series original language: English 
+15:15:51.9 Debug: Trying to parse quality for '/C/Downloads/Series.Title.S01-S03/Series.Title.E05.mkv' 
+15:15:51.9 Debug: Parsing string 'Series.Title.E05.mkv' 
+15:15:51.9 Trace: ^(?&lt;title&gt;.+?)(?:\W+(?:(?:(?&lt;!\()Part\W?|(?&lt;!\d+\W+)e)(?&lt;episode&gt;\d{1,2}(?!\d+|\))))+) 
+15:15:51.9 Debug: Episode Parsed. Series Title - S01E05  
+15:15:51.9 Debug: Languages parsed: Unknown 
+15:15:51.9 Debug: Trying to parse quality for 'Series.Title.E05.mkv' 
+15:15:51.9 Debug: Quality parsed: HDTV-720p v1 
+15:15:51.9 Debug: Release Group parsed:  
+15:15:51.9 Info: --- End: NzbDrone.Core.Test.MediaFiles.EpisodeImport.Manual.ManualImportServiceFixture.should_keep_other_rejections_when_episodes_were_picked ---</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="should_keep_other_rejections_when_episodes_were_picked" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="bd2872e1-d4eb-5139-f21e-42721b09bb12">
+      <Execution id="5255da30-43ea-41f7-8c62-e361b090367a" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.MediaFiles.EpisodeImport.Manual.ManualImportServiceFixture" name="should_keep_other_rejections_when_episodes_were_picked" />
+    </UnitTest>
+    <UnitTest name="should_publish_download_completed_with_the_series_each_download_was_imported_into" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="43024c69-ddcf-dad2-f83d-118061284bd7">
+      <Execution id="8a9058a4-a918-4f7a-a030-2e07455d6b16" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.MediaFiles.EpisodeImport.Manual.ManualImportCompletionFixture" name="should_publish_download_completed_with_the_series_each_download_was_imported_into" />
+    </UnitTest>
+    <UnitTest name="should_drop_multi_season_rejection_when_episodes_were_picked" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="2f593c91-792e-8fbe-1abc-77e27a30fc45">
+      <Execution id="b30e803a-cc82-4d98-a624-1d6ceb4923f1" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.MediaFiles.EpisodeImport.Manual.ManualImportServiceFixture" name="should_drop_multi_season_rejection_when_episodes_were_picked" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="2f593c91-792e-8fbe-1abc-77e27a30fc45" executionId="b30e803a-cc82-4d98-a624-1d6ceb4923f1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="43024c69-ddcf-dad2-f83d-118061284bd7" executionId="8a9058a4-a918-4f7a-a030-2e07455d6b16" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bd2872e1-d4eb-5139-f21e-42721b09bb12" executionId="5255da30-43ea-41f7-8c62-e361b090367a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="3" executed="3" passed="2" failed="1" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 6.3.1.0: Test execution started
+Running selected tests in ${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll
+   NUnit3TestExecutor discovered 3 of 3 NUnit test cases using Current Discovery mode, Non-Explicit run
+15:15:51.7 Info: --- Start: NzbDrone.Core.Test.MediaFiles.EpisodeImport.Manual.ManualImportServiceFixture.should_drop_multi_season_rejection_when_episodes_were_picked --- 
+15:15:51.7 Debug: Language couldn't be parsed from release, falling back to series original language: English 
+15:15:51.7 Debug: Trying to parse quality for '/C/Downloads/Series.Title.S01-S03/Series.Title.E05.mkv' 
+15:15:51.7 Debug: Parsing string 'Series.Title.E05.mkv' 
+15:15:51.9 Trace: ^(?&lt;title&gt;.+?)(?:\W+(?:(?:(?&lt;!\()Part\W?|(?&lt;!\d+\W+)e)(?&lt;episode&gt;\d{1,2}(?!\d+|\))))+) 
+15:15:51.9 Debug: Episode Parsed. Series Title - S01E05  
+15:15:51.9 Debug: Languages parsed: Unknown 
+15:15:51.9 Debug: Trying to parse quality for 'Series.Title.E05.mkv' 
+15:15:51.9 Debug: Quality parsed: HDTV-720p v1 
+15:15:51.9 Debug: Release Group parsed:  
+15:15:51.9 Info: --- End: NzbDrone.Core.Test.MediaFiles.EpisodeImport.Manual.ManualImportServiceFixture.should_drop_multi_season_rejection_when_episodes_were_picked --- 
+
+15:15:51.9 Info: --- Start: NzbDrone.Core.Test.MediaFiles.EpisodeImport.Manual.ManualImportServiceFixture.should_keep_other_rejections_when_episodes_were_picked --- 
+15:15:51.9 Debug: Language couldn't be parsed from release, falling back to series original language: English 
+15:15:51.9 Debug: Trying to parse quality for '/C/Downloads/Series.Title.S01-S03/Series.Title.E05.mkv' 
+15:15:51.9 Debug: Parsing string 'Series.Title.E05.mkv' 
+15:15:51.9 Trace: ^(?&lt;title&gt;.+?)(?:\W+(?:(?:(?&lt;!\()Part\W?|(?&lt;!\d+\W+)e)(?&lt;episode&gt;\d{1,2}(?!\d+|\))))+) 
+15:15:51.9 Debug: Episode Parsed. Series Title - S01E05  
+15:15:51.9 Debug: Languages parsed: Unknown 
+15:15:51.9 Debug: Trying to parse quality for 'Series.Title.E05.mkv' 
+15:15:51.9 Debug: Quality parsed: HDTV-720p v1 
+15:15:51.9 Debug: Release Group parsed:  
+15:15:51.9 Info: --- End: NzbDrone.Core.Test.MediaFiles.EpisodeImport.Manual.ManualImportServiceFixture.should_keep_other_rejections_when_episodes_were_picked --- 
+
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

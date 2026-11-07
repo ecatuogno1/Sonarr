@@ -1,0 +1,496 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="253626ed-d1c7-4923-846a-187fc882916c" name="@TEST-HOST 2026-11-07 15:17:35" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-07T15:17:35.4971700-08:00" queuing="2026-11-07T15:17:35.4971700-08:00" start="2026-11-07T15:17:33.6808090-08:00" finish="2026-11-07T15:17:35.5379480-08:00" />
+  <TestSettings name="default" id="76c591c1-25c2-4d80-8b14-2293d67efda6">
+    <Deployment runDeploymentRoot="_TEST-HOST_2026-11-07_15_17_35" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="1f75e4fb-55df-433a-988f-4743c40b4513" testId="386cb978-5554-2658-09d0-17df363af8e1" testName="should_fail_download_when_nothing_was_imported_and_download_client_reports_a_rejected_file" computerName="TEST-HOST" duration="00:00:00.0026630" startTime="2026-11-07T15:17:34.7395050-08:00" endTime="2026-11-07T15:17:34.7421680-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1f75e4fb-55df-433a-988f-4743c40b4513">
+      <Output>
+        <StdOut>15:17:34.7 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_fail_download_when_nothing_was_imported_and_download_client_reports_a_rejected_file --- 
+15:17:34.7 Debug: Not all episodes have been imported for the release 'Drone.S01E01.HDTV' 
+15:17:34.7 Debug: Download 'Drone.S01E01.HDTV' has no files to import, but the download client reports a rejected file: Caution: Found executable file with extension: .bat 
+15:17:34.7 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_fail_download_when_nothing_was_imported_and_download_client_reports_a_rejected_file ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="da2c4dd0-2a28-4655-bad3-4ff1512bb313" testId="47152823-283c-843c-7508-b8d9048f6651" testName="should_not_process_if_the_download_cannot_be_tracked_using_the_source_title_as_it_was_initiated_externally" computerName="TEST-HOST" duration="00:00:00.0024870" startTime="2026-11-07T15:17:35.4976540-08:00" endTime="2026-11-07T15:17:35.5001420-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="da2c4dd0-2a28-4655-bad3-4ff1512bb313">
+      <Output>
+        <StdOut>15:17:35.4 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_the_download_cannot_be_tracked_using_the_source_title_as_it_was_initiated_externally --- 
+15:17:35.5 Warn: Import blocked for 'Droned Pilot': Series title mismatch; automatic import is not possible. Check the download troubleshooting entry on the wiki for common causes. 
+15:17:35.5 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_the_download_cannot_be_tracked_using_the_source_title_as_it_was_initiated_externally ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="deeb53b2-aa32-42fe-8364-c7d5d6fda837" testId="2c0caa4b-4bf7-58f5-470d-7888a0a4f5e5" testName="should_not_process_if_download_status_isnt_completed(Failed)" computerName="TEST-HOST" duration="00:00:00.0010349" startTime="2026-11-07T15:17:35.4886730-08:00" endTime="2026-11-07T15:17:35.4897080-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="deeb53b2-aa32-42fe-8364-c7d5d6fda837">
+      <Output>
+        <StdOut>15:17:35.4 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_download_status_isnt_completed(Failed) --- 
+15:17:35.4 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_download_status_isnt_completed(Failed) ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0453eaec-352e-4b33-a614-92203c26c929" testId="fb21669b-ff7f-cffb-bc0f-18acc8542249" testName="should_not_mark_as_imported_if_some_of_episodes_were_not_imported" computerName="TEST-HOST" duration="00:00:00.0014840" startTime="2026-11-07T15:17:35.4768020-08:00" endTime="2026-11-07T15:17:35.4782870-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0453eaec-352e-4b33-a614-92203c26c929">
+      <Output>
+        <StdOut>15:17:35.4 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_mark_as_imported_if_some_of_episodes_were_not_imported --- 
+15:17:35.4 Debug: Not all episodes have been imported for the release 'Drone.S01E01.HDTV' 
+15:17:35.4 Warn: Import blocked for 'Drone.S01E01.HDTV': Test Failure; Test Failure 
+15:17:35.4 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_mark_as_imported_if_some_of_episodes_were_not_imported ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2f52bd18-90b9-48dd-a282-1c482478db8c" testId="718d6b6f-7fbf-6042-5f0f-eafec7cb067a" testName="should_not_process_when_there_is_a_title_mismatch" computerName="TEST-HOST" duration="00:00:00.0008750" startTime="2026-11-07T15:17:35.5001610-08:00" endTime="2026-11-07T15:17:35.5010360-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2f52bd18-90b9-48dd-a282-1c482478db8c">
+      <Output>
+        <StdOut>15:17:35.5 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_when_there_is_a_title_mismatch --- 
+15:17:35.5 Warn: Import blocked for 'Drone.S01E01.HDTV': Series title mismatch; automatic import is not possible. Check the download troubleshooting entry on the wiki for common causes. 
+15:17:35.5 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_when_there_is_a_title_mismatch ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="bbb3cef3-4a76-4556-b796-cfa273f94b27" testId="2a42dcd5-2308-8c05-376c-1df6a7d5c6e1" testName="should_mark_as_imported_if_all_episodes_were_imported_but_extra_files_were_not" computerName="TEST-HOST" duration="00:00:00.0024359" startTime="2026-11-07T15:17:34.7448690-08:00" endTime="2026-11-07T15:17:34.7473050-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bbb3cef3-4a76-4556-b796-cfa273f94b27">
+      <Output>
+        <StdOut>15:17:34.7 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_mark_as_imported_if_all_episodes_were_imported_but_extra_files_were_not --- 
+15:17:34.7 Debug: All episodes were imported for Drone.S01E01.HDTV 
+15:17:34.7 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_mark_as_imported_if_all_episodes_were_imported_but_extra_files_were_not ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0e60bf26-5f2b-4175-9419-4c0dbabcca4b" testId="c0cde660-9570-5f97-204c-aa0244192f3b" testName="should_block_import_when_download_client_reports_a_rejected_file_that_is_not_failed" computerName="TEST-HOST" duration="00:00:00.0132510" startTime="2026-11-07T15:17:34.7262290-08:00" endTime="2026-11-07T15:17:34.7394800-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0e60bf26-5f2b-4175-9419-4c0dbabcca4b">
+      <Output>
+        <StdOut>15:17:34.7 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_block_import_when_download_client_reports_a_rejected_file_that_is_not_failed --- 
+15:17:34.7 Debug: Not all episodes have been imported for the release 'Drone.S01E01.HDTV' 
+15:17:34.7 Debug: Download 'Drone.S01E01.HDTV' has no files to import, but the download client reports a rejected file: Caution: Found executable file with extension: .bat 
+15:17:34.7 Warn: Import blocked for 'Drone.S01E01.HDTV': Caution: Found executable file with extension: .bat 
+15:17:34.7 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_block_import_when_download_client_reports_a_rejected_file_that_is_not_failed ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3f8f01ca-d638-4499-ab0b-dddb4d56af57" testId="14b0b963-eea6-def0-05a3-e2a956158c0f" testName="should_warn_when_download_client_reports_a_rejected_file_that_is_not_processed" computerName="TEST-HOST" duration="00:00:00.0017470" startTime="2026-11-07T15:17:35.4824160-08:00" endTime="2026-11-07T15:17:35.4841630-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3f8f01ca-d638-4499-ab0b-dddb4d56af57">
+      <Output>
+        <StdOut>15:17:35.4 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_warn_when_download_client_reports_a_rejected_file_that_is_not_processed --- 
+15:17:35.4 Debug: Not all episodes have been imported for the release 'Drone.S01E01.HDTV' 
+15:17:35.4 Debug: Download 'Drone.S01E01.HDTV' has no files to import, but the download client reports a rejected file: Caution: Found executable file with extension: .bat 
+15:17:35.4 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_warn_when_download_client_reports_a_rejected_file_that_is_not_processed ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a4a05d69-4d0b-40a7-94a7-d1fcd748ba3b" testId="c6a380d0-d9e6-67af-38eb-41a6d4785c17" testName="should_not_process_if_output_path_is_empty" computerName="TEST-HOST" duration="00:00:00.0045560" startTime="2026-11-07T15:17:35.4930820-08:00" endTime="2026-11-07T15:17:35.4976380-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a4a05d69-4d0b-40a7-94a7-d1fcd748ba3b">
+      <Output>
+        <StdOut>15:17:35.4 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_output_path_is_empty --- 
+15:17:35.4 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_output_path_is_empty ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a6eff444-5181-42a4-b404-bf93a2688d8d" testId="7e0ae834-2196-c925-55b7-bd00b782d105" testName="should_not_mark_as_imported_if_all_files_were_skipped" computerName="TEST-HOST" duration="00:00:00.0013380" startTime="2026-11-07T15:17:35.4741960-08:00" endTime="2026-11-07T15:17:35.4755350-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a6eff444-5181-42a4-b404-bf93a2688d8d">
+      <Output>
+        <StdOut>15:17:35.4 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_mark_as_imported_if_all_files_were_skipped --- 
+15:17:35.4 Debug: Not all episodes have been imported for the release 'Drone.S01E01.HDTV' 
+15:17:35.4 Warn: Import blocked for 'Drone.S01E01.HDTV': Test Failure; Test Failure 
+15:17:35.4 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_mark_as_imported_if_all_files_were_skipped ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4be0ee58-fd55-4d4a-9f0b-35bfac04be33" testId="13342e18-334a-e07a-c6a5-8133b907e486" testName="should_not_mark_as_imported_if_all_files_were_rejected" computerName="TEST-HOST" duration="00:00:00.0026850" startTime="2026-11-07T15:17:35.4715040-08:00" endTime="2026-11-07T15:17:35.4741900-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4be0ee58-fd55-4d4a-9f0b-35bfac04be33">
+      <Output>
+        <StdOut>15:17:35.4 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_mark_as_imported_if_all_files_were_rejected --- 
+15:17:35.4 Debug: Not all episodes have been imported for the release 'Drone.S01E01.HDTV' 
+15:17:35.4 Warn: Import blocked for 'Drone.S01E01.HDTV': Test Failure; Test Failure 
+15:17:35.4 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_mark_as_imported_if_all_files_were_rejected ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="231323ab-1bb8-4439-95eb-72ce812e1838" testId="a661da1e-78e5-c661-25d2-08a735d09429" testName="should_not_mark_multi_season_download_as_imported_if_only_first_season_was_imported" computerName="TEST-HOST" duration="00:00:00.0017870" startTime="2026-11-07T15:17:35.4806110-08:00" endTime="2026-11-07T15:17:35.4823980-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="231323ab-1bb8-4439-95eb-72ce812e1838">
+      <Output>
+        <StdOut>15:17:35.4 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_mark_multi_season_download_as_imported_if_only_first_season_was_imported --- 
+15:17:35.4 Debug: Parsing string 'Drone.S01-S03.1080p.BluRay' 
+15:17:35.4 Trace: ^(?&lt;title&gt;.+?)(Complete Series)?[-_. ]+(?:S|(?:Season|Saison|Series|Stagione)[_. ])(?&lt;season&gt;(?&lt;!\d+)(?:\d{1,2})(?!\d+))(?:(?:[-_. ]{1}|[-_. ]{3})(?:S|(?:Season|Saison|Series|Stagione)[_. ])?(?&lt;season&gt;(?&lt;!\d+)(?:\d{1,2})(?!\d+))){1,} 
+15:17:35.4 Debug: Episode Parsed. Drone - Seasons 01-03  
+15:17:35.4 Debug: Languages parsed: Unknown 
+15:17:35.4 Debug: Trying to parse quality for 'Drone.S01-S03.1080p.BluRay' 
+15:17:35.4 Debug: Quality parsed: Bluray-1080p v1 
+15:17:35.4 Debug: Release Group parsed:  
+15:17:35.4 Debug: Not all episodes have been imported for the release 'Drone.S01-S03.1080p.BluRay' 
+15:17:35.4 Warn: Import blocked for 'Drone.S01-S03.1080p.BluRay':  
+15:17:35.4 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_mark_multi_season_download_as_imported_if_only_first_season_was_imported ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="be4b6f0d-8708-4896-83dd-cb4a548e8386" testId="5c02af97-3ed4-a127-cada-86b266cff36e" testName="should_mark_multi_season_download_as_imported_if_all_seasons_were_imported" computerName="TEST-HOST" duration="00:00:00.7100880" startTime="2026-11-07T15:17:34.7593220-08:00" endTime="2026-11-07T15:17:35.4694100-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="be4b6f0d-8708-4896-83dd-cb4a548e8386">
+      <Output>
+        <StdOut>15:17:34.7 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_mark_multi_season_download_as_imported_if_all_seasons_were_imported --- 
+15:17:34.7 Debug: Parsing string 'Drone.S01-S03.1080p.BluRay' 
+15:17:35.2 Trace: ^(?&lt;title&gt;.+?)(Complete Series)?[-_. ]+(?:S|(?:Season|Saison|Series|Stagione)[_. ])(?&lt;season&gt;(?&lt;!\d+)(?:\d{1,2})(?!\d+))(?:(?:[-_. ]{1}|[-_. ]{3})(?:S|(?:Season|Saison|Series|Stagione)[_. ])?(?&lt;season&gt;(?&lt;!\d+)(?:\d{1,2})(?!\d+))){1,} 
+15:17:35.2 Debug: Episode Parsed. Drone - Seasons 01-03  
+15:17:35.3 Debug: Languages parsed: Unknown 
+15:17:35.3 Debug: Trying to parse quality for 'Drone.S01-S03.1080p.BluRay' 
+15:17:35.4 Debug: Quality parsed: Bluray-1080p v1 
+15:17:35.4 Debug: Release Group parsed:  
+15:17:35.4 Debug: All episodes were imported for Drone.S01-S03.1080p.BluRay 
+15:17:35.4 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_mark_multi_season_download_as_imported_if_all_seasons_were_imported ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b02ec9e5-49d6-4e14-8ba8-0139144dd5a4" testId="12f1850f-c64d-c5b3-afab-f7efab37a62c" testName="should_not_process_if_download_status_isnt_completed(Queued)" computerName="TEST-HOST" duration="00:00:00.0007210" startTime="2026-11-07T15:17:35.4897230-08:00" endTime="2026-11-07T15:17:35.4904440-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b02ec9e5-49d6-4e14-8ba8-0139144dd5a4">
+      <Output>
+        <StdOut>15:17:35.4 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_download_status_isnt_completed(Queued) --- 
+15:17:35.4 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_download_status_isnt_completed(Queued) ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9b36009f-fac3-4a98-a58b-f21db2035267" testId="36937fd7-0f08-de5b-57ca-29b3deccd0b4" testName="should_mark_as_imported_if_all_episodes_were_imported_including_history" computerName="TEST-HOST" duration="00:00:00.0073040" startTime="2026-11-07T15:17:34.7473230-08:00" endTime="2026-11-07T15:17:34.7546270-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9b36009f-fac3-4a98-a58b-f21db2035267">
+      <Output>
+        <StdOut>15:17:34.7 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_mark_as_imported_if_all_episodes_were_imported_including_history --- 
+15:17:34.7 Debug: All episodes were imported in history for Drone.S01E01.HDTV 
+15:17:34.7 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_mark_as_imported_if_all_episodes_were_imported_including_history ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="156e76af-6949-483d-88bc-bd1561721874" testId="e864e5ff-f837-bbbc-fa6f-50669af3a752" testName="should_not_process_if_download_status_isnt_completed(Downloading)" computerName="TEST-HOST" duration="00:00:00.0020940" startTime="2026-11-07T15:17:35.4865650-08:00" endTime="2026-11-07T15:17:35.4886590-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="156e76af-6949-483d-88bc-bd1561721874">
+      <Output>
+        <StdOut>15:17:35.4 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_download_status_isnt_completed(Downloading) --- 
+15:17:35.4 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_download_status_isnt_completed(Downloading) ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ae8259d9-0728-4a45-87b3-3d3239b3fbfc" testId="53ef3ca0-da70-5af0-5dce-51928111a30a" testName="should_not_process_if_matching_history_is_not_found_and_no_category_specified" computerName="TEST-HOST" duration="00:00:00.0009940" startTime="2026-11-07T15:17:35.4920710-08:00" endTime="2026-11-07T15:17:35.4930650-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ae8259d9-0728-4a45-87b3-3d3239b3fbfc">
+      <Output>
+        <StdOut>15:17:35.4 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_matching_history_is_not_found_and_no_category_specified --- 
+15:17:35.4 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_matching_history_is_not_found_and_no_category_specified ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2527a9dc-49df-49b8-973d-eab4081a9878" testId="0f6aec10-6518-b62e-11a0-ce4a2833f115" testName="should_not_mark_as_imported_if_some_of_episodes_were_not_imported_including_history" computerName="TEST-HOST" duration="00:00:00.0022990" startTime="2026-11-07T15:17:35.4782910-08:00" endTime="2026-11-07T15:17:35.4805910-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2527a9dc-49df-49b8-973d-eab4081a9878">
+      <Output>
+        <StdOut>15:17:35.4 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_mark_as_imported_if_some_of_episodes_were_not_imported_including_history --- 
+15:17:35.4 Debug: Not all episodes have been imported for the release 'Drone.S01E01.HDTV' 
+15:17:35.4 Warn: Import blocked for 'Drone.S01E01.HDTV': Test Failure; Test Failure 
+15:17:35.4 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_mark_as_imported_if_some_of_episodes_were_not_imported_including_history ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8ab455f7-668e-4570-b8ad-01c6fe7e44c5" testId="55011129-1863-228d-7127-b143a5c2b665" testName="should_not_process_if_download_status_isnt_completed(Warning)" computerName="TEST-HOST" duration="00:00:00.0007510" startTime="2026-11-07T15:17:35.4912790-08:00" endTime="2026-11-07T15:17:35.4920300-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8ab455f7-668e-4570-b8ad-01c6fe7e44c5">
+      <Output>
+        <StdOut>15:17:35.4 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_download_status_isnt_completed(Warning) --- 
+15:17:35.4 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_download_status_isnt_completed(Warning) ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="66ed3f4f-cb37-410f-882f-e518541909aa" testId="e71a51f2-0a97-f544-a5d8-e3014bd7118c" testName="should_not_process_if_download_status_isnt_completed(Paused)" computerName="TEST-HOST" duration="00:00:00.0007950" startTime="2026-11-07T15:17:35.4904600-08:00" endTime="2026-11-07T15:17:35.4912550-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="66ed3f4f-cb37-410f-882f-e518541909aa">
+      <Output>
+        <StdOut>15:17:35.4 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_download_status_isnt_completed(Paused) --- 
+15:17:35.4 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_download_status_isnt_completed(Paused) ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f4fffe87-ad0c-4305-bee5-52a985a2f050" testId="18b42243-96ec-9e67-9e63-b489c07bf196" testName="should_not_mark_as_imported_if_no_episodes_were_parsed" computerName="TEST-HOST" duration="00:00:00.0012590" startTime="2026-11-07T15:17:35.4755400-08:00" endTime="2026-11-07T15:17:35.4767980-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f4fffe87-ad0c-4305-bee5-52a985a2f050">
+      <Output>
+        <StdOut>15:17:35.4 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_mark_as_imported_if_no_episodes_were_parsed --- 
+15:17:35.4 Debug: Not all episodes have been imported for the release 'Drone.S01E01.HDTV' 
+15:17:35.4 Warn: Import blocked for 'Drone.S01E01.HDTV': Test Failure; Test Failure 
+15:17:35.4 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_mark_as_imported_if_no_episodes_were_parsed ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="110cbd32-e6f1-4755-94ea-99fb87d76bce" testId="c61d7b48-3150-3cbf-651a-6d3ac5c88454" testName="should_process_if_matching_history_is_not_found_but_category_specified" computerName="TEST-HOST" duration="00:00:00.0010460" startTime="2026-11-07T15:17:35.5010550-08:00" endTime="2026-11-07T15:17:35.5021010-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="110cbd32-e6f1-4755-94ea-99fb87d76bce">
+      <Output>
+        <StdOut>15:17:35.5 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_process_if_matching_history_is_not_found_but_category_specified --- 
+15:17:35.5 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_process_if_matching_history_is_not_found_but_category_specified ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9bb28b6d-125c-49b5-834a-3058a6517cef" testId="29af2a12-b475-e739-ffd8-6b55361f7926" testName="should_not_check_download_client_files_when_files_were_imported" computerName="TEST-HOST" duration="00:00:00.0020550" startTime="2026-11-07T15:17:35.4694400-08:00" endTime="2026-11-07T15:17:35.4714950-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9bb28b6d-125c-49b5-834a-3058a6517cef">
+      <Output>
+        <StdOut>15:17:35.4 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_check_download_client_files_when_files_were_imported --- 
+15:17:35.4 Debug: All episodes were imported for Drone.S01E01.HDTV 
+15:17:35.4 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_check_download_client_files_when_files_were_imported ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4c75cc00-52ea-41bd-b999-638afb553daa" testId="f4eac8a4-9305-a788-7d5a-68ef41a60f2d" testName="should_mark_as_imported_if_the_download_can_be_tracked_using_the_source_seriesid" computerName="TEST-HOST" duration="00:00:00.0031990" startTime="2026-11-07T15:17:34.7561060-08:00" endTime="2026-11-07T15:17:34.7593050-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4c75cc00-52ea-41bd-b999-638afb553daa">
+      <Output>
+        <StdOut>15:17:34.7 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_mark_as_imported_if_the_download_can_be_tracked_using_the_source_seriesid --- 
+15:17:34.7 Debug: All episodes were imported for Droned Pilot 
+15:17:34.7 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_mark_as_imported_if_the_download_can_be_tracked_using_the_source_seriesid ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2458f2d1-2912-4638-8a82-d74dd274f89a" testId="f090e97c-2aad-05bf-9c0d-81b12e6bb956" testName="should_mark_as_imported_if_double_episode_file_is_imported" computerName="TEST-HOST" duration="00:00:00.0014420" startTime="2026-11-07T15:17:34.7546460-08:00" endTime="2026-11-07T15:17:34.7560880-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2458f2d1-2912-4638-8a82-d74dd274f89a">
+      <Output>
+        <StdOut>15:17:34.7 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_mark_as_imported_if_double_episode_file_is_imported --- 
+15:17:34.7 Debug: All episodes were imported for Drone.S01E01.HDTV 
+15:17:34.7 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_mark_as_imported_if_double_episode_file_is_imported ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a33cd613-5348-42d3-afcf-8973c3fbcdf5" testId="8ccc79c7-adf7-bc59-3ced-33e382d16c04" testName="should_block_import_and_publish_manual_interaction_event_for_dangerous_file_that_is_not_failed" computerName="TEST-HOST" duration="00:00:00.2319260" startTime="2026-11-07T15:17:34.4937920-08:00" endTime="2026-11-07T15:17:34.7256940-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a33cd613-5348-42d3-afcf-8973c3fbcdf5" />
+    <UnitTestResult executionId="98781e55-5c2c-4319-9b2d-f48244748f41" testId="391407d2-b53f-cb87-c4a3-284b9fe88c47" testName="should_warn_when_nothing_was_imported_and_download_client_files_are_not_rejected" computerName="TEST-HOST" duration="00:00:00.0012920" startTime="2026-11-07T15:17:35.4841730-08:00" endTime="2026-11-07T15:17:35.4854660-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="98781e55-5c2c-4319-9b2d-f48244748f41">
+      <Output>
+        <StdOut>15:17:35.4 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_warn_when_nothing_was_imported_and_download_client_files_are_not_rejected --- 
+15:17:35.4 Debug: Not all episodes have been imported for the release 'Drone.S01E01.HDTV' 
+15:17:35.4 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_warn_when_nothing_was_imported_and_download_client_files_are_not_rejected ---</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="62c3ac97-3c2f-45bb-a44f-8f2130cfb5e9" testId="03f54a9c-83c6-e791-a6d3-e60f82da6caa" testName="should_mark_as_imported_if_all_episodes_were_imported" computerName="TEST-HOST" duration="00:00:00.0026630" startTime="2026-11-07T15:17:34.7421870-08:00" endTime="2026-11-07T15:17:34.7448500-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="62c3ac97-3c2f-45bb-a44f-8f2130cfb5e9">
+      <Output>
+        <StdOut>15:17:34.7 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_mark_as_imported_if_all_episodes_were_imported --- 
+15:17:34.7 Debug: All episodes were imported for Drone.S01E01.HDTV 
+15:17:34.7 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_mark_as_imported_if_all_episodes_were_imported ---</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="should_not_process_if_download_status_isnt_completed(Paused)" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="e71a51f2-0a97-f544-a5d8-e3014bd7118c">
+      <Execution id="66ed3f4f-cb37-410f-882f-e518541909aa" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture" name="should_not_process_if_download_status_isnt_completed(Paused)" />
+    </UnitTest>
+    <UnitTest name="should_mark_as_imported_if_all_episodes_were_imported" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="03f54a9c-83c6-e791-a6d3-e60f82da6caa">
+      <Execution id="62c3ac97-3c2f-45bb-a44f-8f2130cfb5e9" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture" name="should_mark_as_imported_if_all_episodes_were_imported" />
+    </UnitTest>
+    <UnitTest name="should_block_import_and_publish_manual_interaction_event_for_dangerous_file_that_is_not_failed" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="8ccc79c7-adf7-bc59-3ced-33e382d16c04">
+      <Execution id="a33cd613-5348-42d3-afcf-8973c3fbcdf5" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture" name="should_block_import_and_publish_manual_interaction_event_for_dangerous_file_that_is_not_failed" />
+    </UnitTest>
+    <UnitTest name="should_not_process_if_download_status_isnt_completed(Warning)" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="55011129-1863-228d-7127-b143a5c2b665">
+      <Execution id="8ab455f7-668e-4570-b8ad-01c6fe7e44c5" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture" name="should_not_process_if_download_status_isnt_completed(Warning)" />
+    </UnitTest>
+    <UnitTest name="should_block_import_when_download_client_reports_a_rejected_file_that_is_not_failed" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="c0cde660-9570-5f97-204c-aa0244192f3b">
+      <Execution id="0e60bf26-5f2b-4175-9419-4c0dbabcca4b" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture" name="should_block_import_when_download_client_reports_a_rejected_file_that_is_not_failed" />
+    </UnitTest>
+    <UnitTest name="should_not_mark_as_imported_if_no_episodes_were_parsed" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="18b42243-96ec-9e67-9e63-b489c07bf196">
+      <Execution id="f4fffe87-ad0c-4305-bee5-52a985a2f050" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture" name="should_not_mark_as_imported_if_no_episodes_were_parsed" />
+    </UnitTest>
+    <UnitTest name="should_mark_as_imported_if_all_episodes_were_imported_but_extra_files_were_not" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="2a42dcd5-2308-8c05-376c-1df6a7d5c6e1">
+      <Execution id="bbb3cef3-4a76-4556-b796-cfa273f94b27" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture" name="should_mark_as_imported_if_all_episodes_were_imported_but_extra_files_were_not" />
+    </UnitTest>
+    <UnitTest name="should_warn_when_download_client_reports_a_rejected_file_that_is_not_processed" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="14b0b963-eea6-def0-05a3-e2a956158c0f">
+      <Execution id="3f8f01ca-d638-4499-ab0b-dddb4d56af57" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture" name="should_warn_when_download_client_reports_a_rejected_file_that_is_not_processed" />
+    </UnitTest>
+    <UnitTest name="should_not_process_if_output_path_is_empty" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="c6a380d0-d9e6-67af-38eb-41a6d4785c17">
+      <Execution id="a4a05d69-4d0b-40a7-94a7-d1fcd748ba3b" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture" name="should_not_process_if_output_path_is_empty" />
+    </UnitTest>
+    <UnitTest name="should_not_process_when_there_is_a_title_mismatch" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="718d6b6f-7fbf-6042-5f0f-eafec7cb067a">
+      <Execution id="2f52bd18-90b9-48dd-a282-1c482478db8c" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture" name="should_not_process_when_there_is_a_title_mismatch" />
+    </UnitTest>
+    <UnitTest name="should_mark_as_imported_if_the_download_can_be_tracked_using_the_source_seriesid" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="f4eac8a4-9305-a788-7d5a-68ef41a60f2d">
+      <Execution id="4c75cc00-52ea-41bd-b999-638afb553daa" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture" name="should_mark_as_imported_if_the_download_can_be_tracked_using_the_source_seriesid" />
+    </UnitTest>
+    <UnitTest name="should_warn_when_nothing_was_imported_and_download_client_files_are_not_rejected" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="391407d2-b53f-cb87-c4a3-284b9fe88c47">
+      <Execution id="98781e55-5c2c-4319-9b2d-f48244748f41" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture" name="should_warn_when_nothing_was_imported_and_download_client_files_are_not_rejected" />
+    </UnitTest>
+    <UnitTest name="should_not_process_if_download_status_isnt_completed(Downloading)" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="e864e5ff-f837-bbbc-fa6f-50669af3a752">
+      <Execution id="156e76af-6949-483d-88bc-bd1561721874" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture" name="should_not_process_if_download_status_isnt_completed(Downloading)" />
+    </UnitTest>
+    <UnitTest name="should_not_mark_as_imported_if_all_files_were_rejected" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="13342e18-334a-e07a-c6a5-8133b907e486">
+      <Execution id="4be0ee58-fd55-4d4a-9f0b-35bfac04be33" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture" name="should_not_mark_as_imported_if_all_files_were_rejected" />
+    </UnitTest>
+    <UnitTest name="should_not_mark_as_imported_if_some_of_episodes_were_not_imported" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="fb21669b-ff7f-cffb-bc0f-18acc8542249">
+      <Execution id="0453eaec-352e-4b33-a614-92203c26c929" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture" name="should_not_mark_as_imported_if_some_of_episodes_were_not_imported" />
+    </UnitTest>
+    <UnitTest name="should_mark_multi_season_download_as_imported_if_all_seasons_were_imported" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="5c02af97-3ed4-a127-cada-86b266cff36e">
+      <Execution id="be4b6f0d-8708-4896-83dd-cb4a548e8386" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture" name="should_mark_multi_season_download_as_imported_if_all_seasons_were_imported" />
+    </UnitTest>
+    <UnitTest name="should_fail_download_when_nothing_was_imported_and_download_client_reports_a_rejected_file" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="386cb978-5554-2658-09d0-17df363af8e1">
+      <Execution id="1f75e4fb-55df-433a-988f-4743c40b4513" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture" name="should_fail_download_when_nothing_was_imported_and_download_client_reports_a_rejected_file" />
+    </UnitTest>
+    <UnitTest name="should_not_mark_multi_season_download_as_imported_if_only_first_season_was_imported" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="a661da1e-78e5-c661-25d2-08a735d09429">
+      <Execution id="231323ab-1bb8-4439-95eb-72ce812e1838" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture" name="should_not_mark_multi_season_download_as_imported_if_only_first_season_was_imported" />
+    </UnitTest>
+    <UnitTest name="should_not_mark_as_imported_if_all_files_were_skipped" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="7e0ae834-2196-c925-55b7-bd00b782d105">
+      <Execution id="a6eff444-5181-42a4-b404-bf93a2688d8d" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture" name="should_not_mark_as_imported_if_all_files_were_skipped" />
+    </UnitTest>
+    <UnitTest name="should_not_process_if_the_download_cannot_be_tracked_using_the_source_title_as_it_was_initiated_externally" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="47152823-283c-843c-7508-b8d9048f6651">
+      <Execution id="da2c4dd0-2a28-4655-bad3-4ff1512bb313" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture" name="should_not_process_if_the_download_cannot_be_tracked_using_the_source_title_as_it_was_initiated_externally" />
+    </UnitTest>
+    <UnitTest name="should_mark_as_imported_if_all_episodes_were_imported_including_history" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="36937fd7-0f08-de5b-57ca-29b3deccd0b4">
+      <Execution id="9b36009f-fac3-4a98-a58b-f21db2035267" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture" name="should_mark_as_imported_if_all_episodes_were_imported_including_history" />
+    </UnitTest>
+    <UnitTest name="should_mark_as_imported_if_double_episode_file_is_imported" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="f090e97c-2aad-05bf-9c0d-81b12e6bb956">
+      <Execution id="2458f2d1-2912-4638-8a82-d74dd274f89a" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture" name="should_mark_as_imported_if_double_episode_file_is_imported" />
+    </UnitTest>
+    <UnitTest name="should_not_process_if_matching_history_is_not_found_and_no_category_specified" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="53ef3ca0-da70-5af0-5dce-51928111a30a">
+      <Execution id="ae8259d9-0728-4a45-87b3-3d3239b3fbfc" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture" name="should_not_process_if_matching_history_is_not_found_and_no_category_specified" />
+    </UnitTest>
+    <UnitTest name="should_process_if_matching_history_is_not_found_but_category_specified" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="c61d7b48-3150-3cbf-651a-6d3ac5c88454">
+      <Execution id="110cbd32-e6f1-4755-94ea-99fb87d76bce" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture" name="should_process_if_matching_history_is_not_found_but_category_specified" />
+    </UnitTest>
+    <UnitTest name="should_not_mark_as_imported_if_some_of_episodes_were_not_imported_including_history" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="0f6aec10-6518-b62e-11a0-ce4a2833f115">
+      <Execution id="2527a9dc-49df-49b8-973d-eab4081a9878" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture" name="should_not_mark_as_imported_if_some_of_episodes_were_not_imported_including_history" />
+    </UnitTest>
+    <UnitTest name="should_not_check_download_client_files_when_files_were_imported" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="29af2a12-b475-e739-ffd8-6b55361f7926">
+      <Execution id="9bb28b6d-125c-49b5-834a-3058a6517cef" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture" name="should_not_check_download_client_files_when_files_were_imported" />
+    </UnitTest>
+    <UnitTest name="should_not_process_if_download_status_isnt_completed(Queued)" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="12f1850f-c64d-c5b3-afab-f7efab37a62c">
+      <Execution id="b02ec9e5-49d6-4e14-8ba8-0139144dd5a4" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture" name="should_not_process_if_download_status_isnt_completed(Queued)" />
+    </UnitTest>
+    <UnitTest name="should_not_process_if_download_status_isnt_completed(Failed)" storage="/volumes/developer storage/developer/radarr/sonarr-upstream/_tests/net10.0/sonarr.core.test.dll" id="2c0caa4b-4bf7-58f5-470d-7888a0a4f5e5">
+      <Execution id="deeb53b2-aa32-42fe-8364-c7d5d6fda837" />
+      <TestMethod codeBase="${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll" adapterTypeName="executor://nunit3testexecutor/" className="NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture" name="should_not_process_if_download_status_isnt_completed(Failed)" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="386cb978-5554-2658-09d0-17df363af8e1" executionId="1f75e4fb-55df-433a-988f-4743c40b4513" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="47152823-283c-843c-7508-b8d9048f6651" executionId="da2c4dd0-2a28-4655-bad3-4ff1512bb313" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2c0caa4b-4bf7-58f5-470d-7888a0a4f5e5" executionId="deeb53b2-aa32-42fe-8364-c7d5d6fda837" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fb21669b-ff7f-cffb-bc0f-18acc8542249" executionId="0453eaec-352e-4b33-a614-92203c26c929" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="718d6b6f-7fbf-6042-5f0f-eafec7cb067a" executionId="2f52bd18-90b9-48dd-a282-1c482478db8c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2a42dcd5-2308-8c05-376c-1df6a7d5c6e1" executionId="bbb3cef3-4a76-4556-b796-cfa273f94b27" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c0cde660-9570-5f97-204c-aa0244192f3b" executionId="0e60bf26-5f2b-4175-9419-4c0dbabcca4b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="14b0b963-eea6-def0-05a3-e2a956158c0f" executionId="3f8f01ca-d638-4499-ab0b-dddb4d56af57" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c6a380d0-d9e6-67af-38eb-41a6d4785c17" executionId="a4a05d69-4d0b-40a7-94a7-d1fcd748ba3b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7e0ae834-2196-c925-55b7-bd00b782d105" executionId="a6eff444-5181-42a4-b404-bf93a2688d8d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="13342e18-334a-e07a-c6a5-8133b907e486" executionId="4be0ee58-fd55-4d4a-9f0b-35bfac04be33" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a661da1e-78e5-c661-25d2-08a735d09429" executionId="231323ab-1bb8-4439-95eb-72ce812e1838" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5c02af97-3ed4-a127-cada-86b266cff36e" executionId="be4b6f0d-8708-4896-83dd-cb4a548e8386" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="12f1850f-c64d-c5b3-afab-f7efab37a62c" executionId="b02ec9e5-49d6-4e14-8ba8-0139144dd5a4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="36937fd7-0f08-de5b-57ca-29b3deccd0b4" executionId="9b36009f-fac3-4a98-a58b-f21db2035267" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e864e5ff-f837-bbbc-fa6f-50669af3a752" executionId="156e76af-6949-483d-88bc-bd1561721874" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="53ef3ca0-da70-5af0-5dce-51928111a30a" executionId="ae8259d9-0728-4a45-87b3-3d3239b3fbfc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0f6aec10-6518-b62e-11a0-ce4a2833f115" executionId="2527a9dc-49df-49b8-973d-eab4081a9878" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="55011129-1863-228d-7127-b143a5c2b665" executionId="8ab455f7-668e-4570-b8ad-01c6fe7e44c5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e71a51f2-0a97-f544-a5d8-e3014bd7118c" executionId="66ed3f4f-cb37-410f-882f-e518541909aa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="18b42243-96ec-9e67-9e63-b489c07bf196" executionId="f4fffe87-ad0c-4305-bee5-52a985a2f050" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c61d7b48-3150-3cbf-651a-6d3ac5c88454" executionId="110cbd32-e6f1-4755-94ea-99fb87d76bce" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="29af2a12-b475-e739-ffd8-6b55361f7926" executionId="9bb28b6d-125c-49b5-834a-3058a6517cef" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f4eac8a4-9305-a788-7d5a-68ef41a60f2d" executionId="4c75cc00-52ea-41bd-b999-638afb553daa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f090e97c-2aad-05bf-9c0d-81b12e6bb956" executionId="2458f2d1-2912-4638-8a82-d74dd274f89a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8ccc79c7-adf7-bc59-3ced-33e382d16c04" executionId="a33cd613-5348-42d3-afcf-8973c3fbcdf5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="391407d2-b53f-cb87-c4a3-284b9fe88c47" executionId="98781e55-5c2c-4319-9b2d-f48244748f41" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="03f54a9c-83c6-e791-a6d3-e60f82da6caa" executionId="62c3ac97-3c2f-45bb-a44f-8f2130cfb5e9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="28" executed="28" passed="28" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 6.3.1.0: Test execution started
+Running selected tests in ${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll
+   NUnit3TestExecutor discovered 28 of 28 NUnit test cases using Current Discovery mode, Non-Explicit run
+15:17:34.7 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_block_import_when_download_client_reports_a_rejected_file_that_is_not_failed --- 
+15:17:34.7 Debug: Not all episodes have been imported for the release 'Drone.S01E01.HDTV' 
+15:17:34.7 Debug: Download 'Drone.S01E01.HDTV' has no files to import, but the download client reports a rejected file: Caution: Found executable file with extension: .bat 
+15:17:34.7 Warn: Import blocked for 'Drone.S01E01.HDTV': Caution: Found executable file with extension: .bat 
+15:17:34.7 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_block_import_when_download_client_reports_a_rejected_file_that_is_not_failed --- 
+
+15:17:34.7 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_fail_download_when_nothing_was_imported_and_download_client_reports_a_rejected_file --- 
+15:17:34.7 Debug: Not all episodes have been imported for the release 'Drone.S01E01.HDTV' 
+15:17:34.7 Debug: Download 'Drone.S01E01.HDTV' has no files to import, but the download client reports a rejected file: Caution: Found executable file with extension: .bat 
+15:17:34.7 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_fail_download_when_nothing_was_imported_and_download_client_reports_a_rejected_file --- 
+
+15:17:34.7 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_mark_as_imported_if_all_episodes_were_imported --- 
+15:17:34.7 Debug: All episodes were imported for Drone.S01E01.HDTV 
+15:17:34.7 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_mark_as_imported_if_all_episodes_were_imported --- 
+
+15:17:34.7 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_mark_as_imported_if_all_episodes_were_imported_but_extra_files_were_not --- 
+15:17:34.7 Debug: All episodes were imported for Drone.S01E01.HDTV 
+15:17:34.7 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_mark_as_imported_if_all_episodes_were_imported_but_extra_files_were_not --- 
+
+15:17:34.7 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_mark_as_imported_if_all_episodes_were_imported_including_history --- 
+15:17:34.7 Debug: All episodes were imported in history for Drone.S01E01.HDTV 
+15:17:34.7 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_mark_as_imported_if_all_episodes_were_imported_including_history --- 
+
+15:17:34.7 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_mark_as_imported_if_double_episode_file_is_imported --- 
+15:17:34.7 Debug: All episodes were imported for Drone.S01E01.HDTV 
+15:17:34.7 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_mark_as_imported_if_double_episode_file_is_imported --- 
+
+15:17:34.7 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_mark_as_imported_if_the_download_can_be_tracked_using_the_source_seriesid --- 
+15:17:34.7 Debug: All episodes were imported for Droned Pilot 
+15:17:34.7 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_mark_as_imported_if_the_download_can_be_tracked_using_the_source_seriesid --- 
+
+15:17:34.7 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_mark_multi_season_download_as_imported_if_all_seasons_were_imported --- 
+15:17:34.7 Debug: Parsing string 'Drone.S01-S03.1080p.BluRay' 
+15:17:35.2 Trace: ^(?&lt;title&gt;.+?)(Complete Series)?[-_. ]+(?:S|(?:Season|Saison|Series|Stagione)[_. ])(?&lt;season&gt;(?&lt;!\d+)(?:\d{1,2})(?!\d+))(?:(?:[-_. ]{1}|[-_. ]{3})(?:S|(?:Season|Saison|Series|Stagione)[_. ])?(?&lt;season&gt;(?&lt;!\d+)(?:\d{1,2})(?!\d+))){1,} 
+15:17:35.2 Debug: Episode Parsed. Drone - Seasons 01-03  
+15:17:35.3 Debug: Languages parsed: Unknown 
+15:17:35.3 Debug: Trying to parse quality for 'Drone.S01-S03.1080p.BluRay' 
+15:17:35.4 Debug: Quality parsed: Bluray-1080p v1 
+15:17:35.4 Debug: Release Group parsed:  
+15:17:35.4 Debug: All episodes were imported for Drone.S01-S03.1080p.BluRay 
+15:17:35.4 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_mark_multi_season_download_as_imported_if_all_seasons_were_imported --- 
+
+15:17:35.4 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_check_download_client_files_when_files_were_imported --- 
+15:17:35.4 Debug: All episodes were imported for Drone.S01E01.HDTV 
+15:17:35.4 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_check_download_client_files_when_files_were_imported --- 
+
+15:17:35.4 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_mark_as_imported_if_all_files_were_rejected --- 
+15:17:35.4 Debug: Not all episodes have been imported for the release 'Drone.S01E01.HDTV' 
+15:17:35.4 Warn: Import blocked for 'Drone.S01E01.HDTV': Test Failure; Test Failure 
+15:17:35.4 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_mark_as_imported_if_all_files_were_rejected --- 
+
+15:17:35.4 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_mark_as_imported_if_all_files_were_skipped --- 
+15:17:35.4 Debug: Not all episodes have been imported for the release 'Drone.S01E01.HDTV' 
+15:17:35.4 Warn: Import blocked for 'Drone.S01E01.HDTV': Test Failure; Test Failure 
+15:17:35.4 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_mark_as_imported_if_all_files_were_skipped --- 
+
+15:17:35.4 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_mark_as_imported_if_no_episodes_were_parsed --- 
+15:17:35.4 Debug: Not all episodes have been imported for the release 'Drone.S01E01.HDTV' 
+15:17:35.4 Warn: Import blocked for 'Drone.S01E01.HDTV': Test Failure; Test Failure 
+15:17:35.4 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_mark_as_imported_if_no_episodes_were_parsed --- 
+
+15:17:35.4 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_mark_as_imported_if_some_of_episodes_were_not_imported --- 
+15:17:35.4 Debug: Not all episodes have been imported for the release 'Drone.S01E01.HDTV' 
+15:17:35.4 Warn: Import blocked for 'Drone.S01E01.HDTV': Test Failure; Test Failure 
+15:17:35.4 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_mark_as_imported_if_some_of_episodes_were_not_imported --- 
+
+15:17:35.4 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_mark_as_imported_if_some_of_episodes_were_not_imported_including_history --- 
+15:17:35.4 Debug: Not all episodes have been imported for the release 'Drone.S01E01.HDTV' 
+15:17:35.4 Warn: Import blocked for 'Drone.S01E01.HDTV': Test Failure; Test Failure 
+15:17:35.4 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_mark_as_imported_if_some_of_episodes_were_not_imported_including_history --- 
+
+15:17:35.4 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_mark_multi_season_download_as_imported_if_only_first_season_was_imported --- 
+15:17:35.4 Debug: Parsing string 'Drone.S01-S03.1080p.BluRay' 
+15:17:35.4 Trace: ^(?&lt;title&gt;.+?)(Complete Series)?[-_. ]+(?:S|(?:Season|Saison|Series|Stagione)[_. ])(?&lt;season&gt;(?&lt;!\d+)(?:\d{1,2})(?!\d+))(?:(?:[-_. ]{1}|[-_. ]{3})(?:S|(?:Season|Saison|Series|Stagione)[_. ])?(?&lt;season&gt;(?&lt;!\d+)(?:\d{1,2})(?!\d+))){1,} 
+15:17:35.4 Debug: Episode Parsed. Drone - Seasons 01-03  
+15:17:35.4 Debug: Languages parsed: Unknown 
+15:17:35.4 Debug: Trying to parse quality for 'Drone.S01-S03.1080p.BluRay' 
+15:17:35.4 Debug: Quality parsed: Bluray-1080p v1 
+15:17:35.4 Debug: Release Group parsed:  
+15:17:35.4 Debug: Not all episodes have been imported for the release 'Drone.S01-S03.1080p.BluRay' 
+15:17:35.4 Warn: Import blocked for 'Drone.S01-S03.1080p.BluRay':  
+15:17:35.4 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_not_mark_multi_season_download_as_imported_if_only_first_season_was_imported --- 
+
+15:17:35.4 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_warn_when_download_client_reports_a_rejected_file_that_is_not_processed --- 
+15:17:35.4 Debug: Not all episodes have been imported for the release 'Drone.S01E01.HDTV' 
+15:17:35.4 Debug: Download 'Drone.S01E01.HDTV' has no files to import, but the download client reports a rejected file: Caution: Found executable file with extension: .bat 
+15:17:35.4 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_warn_when_download_client_reports_a_rejected_file_that_is_not_processed --- 
+
+15:17:35.4 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_warn_when_nothing_was_imported_and_download_client_files_are_not_rejected --- 
+15:17:35.4 Debug: Not all episodes have been imported for the release 'Drone.S01E01.HDTV' 
+15:17:35.4 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ImportFixture.should_warn_when_nothing_was_imported_and_download_client_files_are_not_rejected --- 
+
+15:17:35.4 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_download_status_isnt_completed(Downloading) --- 
+15:17:35.4 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_download_status_isnt_completed(Downloading) --- 
+
+15:17:35.4 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_download_status_isnt_completed(Failed) --- 
+15:17:35.4 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_download_status_isnt_completed(Failed) --- 
+
+15:17:35.4 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_download_status_isnt_completed(Queued) --- 
+15:17:35.4 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_download_status_isnt_completed(Queued) --- 
+
+15:17:35.4 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_download_status_isnt_completed(Paused) --- 
+15:17:35.4 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_download_status_isnt_completed(Paused) --- 
+
+15:17:35.4 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_download_status_isnt_completed(Warning) --- 
+15:17:35.4 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_download_status_isnt_completed(Warning) --- 
+
+15:17:35.4 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_matching_history_is_not_found_and_no_category_specified --- 
+15:17:35.4 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_matching_history_is_not_found_and_no_category_specified --- 
+
+15:17:35.4 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_output_path_is_empty --- 
+15:17:35.4 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_output_path_is_empty --- 
+
+15:17:35.4 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_the_download_cannot_be_tracked_using_the_source_title_as_it_was_initiated_externally --- 
+15:17:35.5 Warn: Import blocked for 'Droned Pilot': Series title mismatch; automatic import is not possible. Check the download troubleshooting entry on the wiki for common causes. 
+15:17:35.5 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_if_the_download_cannot_be_tracked_using_the_source_title_as_it_was_initiated_externally --- 
+
+15:17:35.5 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_when_there_is_a_title_mismatch --- 
+15:17:35.5 Warn: Import blocked for 'Drone.S01E01.HDTV': Series title mismatch; automatic import is not possible. Check the download troubleshooting entry on the wiki for common causes. 
+15:17:35.5 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_not_process_when_there_is_a_title_mismatch --- 
+
+15:17:35.5 Info: --- Start: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_process_if_matching_history_is_not_found_but_category_specified --- 
+15:17:35.5 Info: --- End: NzbDrone.Core.Test.Download.CompletedDownloadServiceTests.ProcessFixture.should_process_if_matching_history_is_not_found_but_category_specified --- 
+
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

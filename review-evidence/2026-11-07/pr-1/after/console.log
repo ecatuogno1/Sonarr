@@ -1,0 +1,38 @@
+Test run for ${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll (.NETCoreApp,Version=v10.0)
+A total of 1 test files matched the specified pattern.
+NUnit Adapter 6.3.1.0: Test execution started
+Running selected tests in ${SONARR_REPO}/_tests/net10.0/Sonarr.Core.Test.dll
+   NUnit3TestExecutor discovered 3 of 3 NUnit test cases using Current Discovery mode, Non-Explicit run
+15:16:24.7 Info: --- Start: NzbDrone.Core.Test.MediaFiles.EpisodeImport.Manual.ManualImportServiceFixture.should_drop_multi_season_rejection_when_episodes_were_picked --- 
+15:16:24.7 Debug: Language couldn't be parsed from release, falling back to series original language: English 
+15:16:24.7 Debug: Trying to parse quality for '/C/Downloads/Series.Title.S01-S03/Series.Title.E05.mkv' 
+15:16:24.7 Debug: Parsing string 'Series.Title.E05.mkv' 
+15:16:25.0 Trace: ^(?<title>.+?)(?:\W+(?:(?:(?<!\()Part\W?|(?<!\d+\W+)e)(?<episode>\d{1,2}(?!\d+|\))))+) 
+15:16:25.0 Debug: Episode Parsed. Series Title - S01E05  
+15:16:25.0 Debug: Languages parsed: Unknown 
+15:16:25.0 Debug: Trying to parse quality for 'Series.Title.E05.mkv' 
+15:16:25.0 Debug: Quality parsed: HDTV-720p v1 
+15:16:25.0 Debug: Release Group parsed:  
+15:16:25.0 Info: --- End: NzbDrone.Core.Test.MediaFiles.EpisodeImport.Manual.ManualImportServiceFixture.should_drop_multi_season_rejection_when_episodes_were_picked --- 
+
+15:16:25.0 Info: --- Start: NzbDrone.Core.Test.MediaFiles.EpisodeImport.Manual.ManualImportServiceFixture.should_keep_other_rejections_when_episodes_were_picked --- 
+15:16:25.0 Debug: Language couldn't be parsed from release, falling back to series original language: English 
+15:16:25.0 Debug: Trying to parse quality for '/C/Downloads/Series.Title.S01-S03/Series.Title.E05.mkv' 
+15:16:25.0 Debug: Parsing string 'Series.Title.E05.mkv' 
+15:16:25.0 Trace: ^(?<title>.+?)(?:\W+(?:(?:(?<!\()Part\W?|(?<!\d+\W+)e)(?<episode>\d{1,2}(?!\d+|\))))+) 
+15:16:25.0 Debug: Episode Parsed. Series Title - S01E05  
+15:16:25.0 Debug: Languages parsed: Unknown 
+15:16:25.0 Debug: Trying to parse quality for 'Series.Title.E05.mkv' 
+15:16:25.0 Debug: Quality parsed: HDTV-720p v1 
+15:16:25.0 Debug: Release Group parsed:  
+15:16:25.0 Info: --- End: NzbDrone.Core.Test.MediaFiles.EpisodeImport.Manual.ManualImportServiceFixture.should_keep_other_rejections_when_episodes_were_picked --- 
+
+  Passed should_publish_download_completed_with_the_series_each_download_was_imported_into [980 ms]
+  Passed should_drop_multi_season_rejection_when_episodes_were_picked [260 ms]
+  Passed should_keep_other_rejections_when_episodes_were_picked [8 ms]
+
+Test Run Successful.
+Total tests: 3
+     Passed: 3
+ Total time: 2.3420 Seconds
+Results File: ${EVIDENCE_OUTPUT}/pr-1/after/tests.trx
